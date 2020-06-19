@@ -8,6 +8,13 @@
   }
 
 /* Add some content at the bottom of the video/page */
+.logo {
+  position: fixed;
+  bottom: 25%;
+  left: 38%;
+  width: 25%;
+  align-content: center;
+}
 .content {
     position: fixed;
     bottom: 0;
@@ -16,7 +23,7 @@
     font-size: 30px;
     font-weight: bold;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
   }
 
   button {
