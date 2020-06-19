@@ -1,30 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Age from './pages/Age'
-import 'materialize-css';
-import { Button, Card, Row, Col } from 'react-materialize';
+import Main from './pages/Main'
+// import 'materialize-css';
+// import { Button, Card, Row, Col } from 'react-materialize';
 
 function App() {
+  
   return (
-    <div className="App">
-      <Age/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+          <Age />
+          <Main />
+
   );
 }
 
 export default App;
+
+{/* <div className="App">
+      <div className="router">
+        <Router >
+          <Switch className="content">
+            <Route exact path="/" component={Main} />
+            <Route path="*"><Redirect to="/" /></Route>
+          </Switch>
+        </Router>
+      </div>
+      <Footer/>
+    </div> */}
