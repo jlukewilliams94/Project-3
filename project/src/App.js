@@ -3,9 +3,10 @@ import React from 'react';
 import './App.css';
 import Age from './pages/Age';
 import Main from './pages/Main';
-import Admin from '.pages/Admin';
+import Admin from './pages/Admin';
+import Shop from './pages/Shop';
 import 'materialize-css';
-import { Button, Card, Row, Col } from 'react-materialize';
+//import { Button, Card, Row, Col } from 'react-materialize';
 import VerifiedRoute from './components/privateRoute'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" component={Age}/>
             <VerifiedRoute path='/main' component={Main}/>
             <Route exact path="/admin" component={Admin} />
+            <Route exact path="/shop" component={Shop} />
           </Switch>
         </div>
       </Router>
@@ -25,18 +27,3 @@ function App() {
 }
 
 export default App;
-
-{/* <div className="App" style={{backgroundImage: `url(${Background})`, backgroundRepeat: "repeat"}}>
-      <div className="router">
-      <Router >
-      <Navbar className="navbar bg-dark "/>
-        <Switch className="content">
-        <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
-        <Route path="*"><Redirect to="/" /></Route>
-        </Switch>
-      </Router>
-      </div>
-      <Footer />
-    </div> */}
