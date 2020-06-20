@@ -9,7 +9,7 @@ function Navbar() {
 
     return (
         <div>
-            <nav className="navbar" style={{height: "70px"}}>
+            <nav className="navbar" style={{height: "75px"}}>
                 <div className="nav-wrapper">
                     
                     <span className="left hide-on-med-and-down menu ">
