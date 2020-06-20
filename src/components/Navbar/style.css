@@ -1,12 +1,16 @@
 .navbar {
-    background-color: lightblue;
+    background-color: rgb(4, 4, 53);
 }
 
 .list {
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 .fa {
     font-size: 30px;
+}
+
+img {
+    width: 250px;
 }
