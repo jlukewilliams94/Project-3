@@ -5,6 +5,9 @@ import Age from './pages/Age';
 import Main from './pages/Main';
 import Admin from './pages/Admin';
 import Shop from './pages/Shop';
+import Cart from './pages/Cart'
+import Community from './pages/Community';
+import Contact from './pages/Contact';
 import 'materialize-css';
 //import { Button, Card, Row, Col } from 'react-materialize';
 import VerifiedRoute from './components/privateRoute'
@@ -20,6 +23,9 @@ function App() {
             <VerifiedRoute path='/main' component={Main}/>
             <Route exact path="/admin" component={Admin} />
             <Route exact path="/shop" component={Shop} />
+            <Route exact path="/cart" component={Cart} />
+            <Route exact path="/community" component={Community} />
+            <Route exact path="/contact" component={Contact} />
           </Switch>
         </div>
       </Router>

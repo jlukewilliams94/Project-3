@@ -18,6 +18,11 @@ function Navbar() {
                         {(<Link to="/admin" className="list">Admin Login </Link>)}
                         {(<Link to="/shop" className="list">Shop </Link>)}
                     </ul>
+                    <ul className="right hide-on-med-and-down menu ">
+                        {(<Link to="/cart" className="list"><i className="fa fa-shopping-cart"></i> </Link>)}
+                        {(<Link to="/community" className="list">Community </Link>)}
+                        {(<Link to="/contact" className="list">Contact Us </Link>)}
+                    </ul>
                 </div>
             </nav>
         </div>
