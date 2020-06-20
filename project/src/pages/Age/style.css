@@ -24,8 +24,8 @@
     padding: 40px;
   }
 
-  button {
-    background-color: black;
+  .btn {
+    background-color: rgb(81, 147, 173);
     color: white;
     font-size: 20px;
     margin-right: 1rem;

@@ -15,6 +15,7 @@ function Age() {
     const no =()=>{
         localStorage.setItem('verified', 'false')
     }
+
     return (
         <div className="mainRow">
             {redirect? <Redirect to="/main"/>:null}
@@ -23,9 +24,9 @@ function Age() {
                 src={Beer} type="video/mp4" />
             <img className=" center-align valign-wrapper logo" src={Logo} alt="logo" />
             <span className="card-title caption content center-align">Are you 21 or older?
-                                <div>
-                    <Button className="btn waves-effect waves-light btn-large" href="/" onClick={Yes}>Yes</Button>
-                    <Button className="btn waves-effect waves-light btn-large" href="/" onClick={no}>No</Button>
+                <div>
+                    <Button className="btn waves-effect-yellow btn-small" href="/" onClick={Yes}>Yes</Button>
+                    <Button className="btn waves-effect-yellow btn-small" href="/" onClick={no}>No</Button>
                 </div>
             </span>
         </div>

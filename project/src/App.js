@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Age from './pages/Age';
 import Main from './pages/Main';
+import Admin from '.pages/Admin';
 import 'materialize-css';
 import { Button, Card, Row, Col } from 'react-materialize';
 import VerifiedRoute from './components/privateRoute'
@@ -16,7 +17,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Age}/>
             <VerifiedRoute path='/main' component={Main}/>
-
+            <Route exact path="/admin" component={Admin} />
           </Switch>
         </div>
       </Router>
