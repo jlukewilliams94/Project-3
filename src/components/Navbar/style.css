@@ -1,5 +1,5 @@
 .navbar {
-    background-color: lightblue;
+    background-color: navy;
 }
 
 .list {
@@ -9,4 +9,8 @@
 
 .fa {
     font-size: 30px;
+}
+
+img {
+    width: 250px;
 }
