@@ -9,6 +9,7 @@ function Main() {
     <div>
       <Navbar />
         <div>
+          <h1>BUY LOCAL</h1>
           <img src={Charlotte} alt="skyline" className="image" />
         </div>
   
