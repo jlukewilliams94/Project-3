@@ -14,8 +14,9 @@ function Navbar() {
                         <img src={Logo} alt="logo" />
                     </a>
                     <ul className="left hide-on-med-and-down menu ">
-                        {(<Link to="/admin" className="list">Admin Login &nbsp;&nbsp; </Link>)}
-                        {(<Link to="/shop" className="list">Shop &nbsp;&nbsp; </Link>)}
+                        {(<Link to="/main" className="list">Home </Link>)}
+                        {(<Link to="/admin" className="list">Admin Login </Link>)}
+                        {(<Link to="/shop" className="list">Shop </Link>)}
                     </ul>
                 </div>
             </nav>
