@@ -1,16 +1,19 @@
 .navbar {
     background-color: rgb(4, 4, 53);
+    border-bottom: solid;
+    border-bottom-color: white;
 }
 
 .list {
     color: white;
-    font-weight: bold;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 35px;
 }
 
 .fa {
     font-size: 30px;
 }
 
-img {
+.navlogo {
     width: 250px;
 }

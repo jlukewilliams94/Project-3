@@ -1,11 +1,15 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
+import Flight from './flight.jpg'
+import './style.css'
 
 function Contact() {
-    return(
+    return (
         <div>
             <Navbar />
-            <h3>Contact Us</h3>
+            <div>
+                <img src={Flight} alt="flight" className="flight" />
+            </div>
         </div>
     )
 }
