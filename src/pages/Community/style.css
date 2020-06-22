@@ -9,6 +9,19 @@
     opacity: 50%;
 }
 
+.workforbeer {
+    padding-left: 5rem;
+    padding-top: 5rem;
+    width: 25%;
+}
+
+.socialevents {
+    padding-left: 3rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
 /* .local {
     padding-left: 37%;
     font-family: 'Just Another Hand', cursive;
