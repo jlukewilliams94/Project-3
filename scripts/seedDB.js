@@ -6,7 +6,7 @@ const db = require("../models");
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
 
 const brewerySeed = [
-    NodaBrewingCompany = {
+    {
         name: "NoDa Brewing Company",
         logo: "",
         location: "Noda, Charlotte",
@@ -55,7 +55,7 @@ const brewerySeed = [
             },
         ],
     },
-    BirdsongBrewingCompany = {
+    {
         name: "Birdsong Brewing Company",
         logo: "",
         location: "Uptown, Charlotte",
@@ -104,7 +104,7 @@ const brewerySeed = [
             },
         ],
     },
-    BlueBlazeBrewing = {
+    {
         name: "Blue Blaze Brewing",
         logo: "",
         location: "West End, Charlotte",
@@ -153,7 +153,7 @@ const brewerySeed = [
             },
         ],
     },
-    BrewersAt4001Yancy = {
+    {
         name: "Brewers At 4001 Yancy",
         logo: "",
         location: "LoSO, Charlotte",
@@ -202,7 +202,7 @@ const brewerySeed = [
             },
         ],
     },
-    Catawba = {
+    {
         name: "Catawba",
         logo: "",
         location: "Belmont, Charlotte",
@@ -251,7 +251,7 @@ const brewerySeed = [
             },
         ],
     },
-    FreeRangeBrewing = {
+    {
         name: "Free Range Brewing",
         logo: "",
         location: "Noda, Charlotte",
@@ -300,7 +300,7 @@ const brewerySeed = [
             },
         ],
     },
-    HeistBrewery = {
+    {
         name: "Heist Brewery",
         logo: "",
         location: "",
@@ -349,7 +349,7 @@ const brewerySeed = [
             },
         ],
     },
-    LegionBrewing = {
+    {
         name: "Legion Brewing",
         logo: "",
         location: "Plaza Midwood, Charlotte",
@@ -398,7 +398,7 @@ const brewerySeed = [
             },
         ],
     },
-    LennyBoyBrewing = {
+    {
         name: "Lenny Boy Brewing",
         logo: "",
         location: "South End, Charlotte",
@@ -447,7 +447,7 @@ const brewerySeed = [
             },
         ],
     },
-    OldeMecklenburgBrewery = {
+    {
         name: "Olde Mecklenburg Brewery",
         logo: "",
         location: "LoSO, Charlotte",
@@ -496,7 +496,7 @@ const brewerySeed = [
             },
         ],
     },
-    ResidentCultureBrewing = {
+    {
         name: "Resident Culture Brewing",
         logo: "",
         location: "Plaze Midwood, Charlotte",
@@ -545,7 +545,7 @@ const brewerySeed = [
             },
         ],
     },
-    SuffolkPunch = {
+    {
         name: "Suffolk Punch",
         logo: "",
         location: "South End, Charlotte",
@@ -594,7 +594,7 @@ const brewerySeed = [
             },
         ],
     },
-    SugarCreekBrewing = {
+    {
         name: "Sugar Creek Brewing",
         logo: "",
         location: "LoSO, Charlotte",
@@ -643,7 +643,7 @@ const brewerySeed = [
             },
         ],
     },
-    SycamoreBrewing = {
+    {
         name: "Sycamore Brewing",
         logo: "",
         location: "South End, Charlotte",
@@ -692,7 +692,7 @@ const brewerySeed = [
             },
         ],
     },
-    TripleCBrewing = {
+    {
         name: "Triple C Brewing",
         logo: "",
         location: "South End, Charlotte",
@@ -741,7 +741,7 @@ const brewerySeed = [
             },
         ],
     },
-    UnknownBrewing = {
+    {
         name: "Unknown Brewing",
         logo: "",
         location: "The Gold District, Charlotte",
@@ -790,7 +790,7 @@ const brewerySeed = [
             },
         ],
     },
-    WoodenRobotBrewing = {
+    {
         name: "Wooden Robot Brewing",
         logo: "",
         location: "South End, Charlotte",
@@ -840,6 +840,18 @@ const brewerySeed = [
         ],
     },
 
-]
+];
 
-console.log(brewerySeed.brewery1.beers[0]);
+db.Post.deleteMany({})
+  .then(() => db.Post.collection.insertMany(brewerySeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+
+// console.log(brewerySeed[0].beers[0]);
