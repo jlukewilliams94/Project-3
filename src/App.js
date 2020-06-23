@@ -21,11 +21,11 @@ function App() {
           <Switch>
             <Route exact path="/" component={Age}/>
             <VerifiedRoute path='/main' component={Main}/>
-            <Route exact path="/admin" component={Admin} />
-            <Route exact path="/shop" component={Shop} />
-            <Route exact path="/cart" component={Cart} />
-            <Route exact path="/community" component={Community} />
-            <Route exact path="/contact" component={Contact} />
+            <VerifiedRoute exact path="/admin" component={Admin} />
+            <VerifiedRoute exact path="/shop" component={Shop} />
+            <VerifiedRoute exact path="/cart" component={Cart} />
+            <VerifiedRoute exact path="/community" component={Community} />
+            <VerifiedRoute exact path="/contact" component={Contact} />
           </Switch>
         </div>
       </Router>

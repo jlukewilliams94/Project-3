@@ -1,3 +1,15 @@
 h3 {
     color: lightblue;
 }
+
+.beersign {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 75%;
+}
+

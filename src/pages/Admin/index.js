@@ -4,6 +4,8 @@ import { Row, Col, TextInput, Button } from 'react-materialize';
 import './style.css'
 import API from '../../lib/API'
 import {Redirect} from  'react-router-dom'
+import Beersign from './beersign.jpg'
+
 function Admin() {
     const [email, setEmail] =useState('')
     const [password, setPassword] = useState('')
@@ -18,6 +20,7 @@ function Admin() {
     if(redirect)return(<Redirect to='/cart' />)
     return (
         <div>
+            <img src={Beersign} alt="beersign" className="beersign"/>
             <Navbar />
             <Col>
                 <Row>

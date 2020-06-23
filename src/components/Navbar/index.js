@@ -13,17 +13,17 @@ function Navbar() {
                 <div className="nav-wrapper">
                     
                     <span className="left hide-on-med-and-down menu ">
-                        {(<Link to="/main" className="list"> &nbsp;&nbsp;&nbsp; HOME &nbsp;&nbsp;&nbsp;&nbsp;</Link>)}
-                        {(<Link to="/shop" className="list">SHOP </Link>)}
-                        {(<Link to="/community" className="list"> &nbsp;&nbsp;&nbsp;&nbsp;COMMUNITY </Link>)}
+                        {(<Link to="/main" className="list"> &nbsp;&nbsp;&nbsp; home &nbsp;&nbsp;&nbsp;&nbsp;</Link>)}
+                        {(<Link to="/shop" className="list">shop </Link>)}
+                        {(<Link to="/community" className="list"> &nbsp;&nbsp;&nbsp;&nbsp;community </Link>)}
                     </span>
                     <a href="/main" className="brand-logo center">
                         <img className="navlogo" src={NavLogo} alt="logo" />
                     </a>
                     <span className="right hide-on-med-and-down menu ">
                         {(<Link to="/cart" className="list"><i className="fa fa-shopping-cart"></i>&nbsp; </Link>)}
-                        {(<Link to="/admin" className="list"> &nbsp;&nbsp;&nbsp;&nbsp; ADMIN</Link>)}
-                        {(<Link to="/contact" className="list"> &nbsp;&nbsp;&nbsp;&nbsp; CONTACT &nbsp;&nbsp;&nbsp; </Link>)}
+                        {(<Link to="/admin" className="list"> &nbsp;&nbsp;&nbsp;&nbsp; admin</Link>)}
+                        {(<Link to="/contact" className="list"> &nbsp;&nbsp;&nbsp;&nbsp; contact &nbsp;&nbsp;&nbsp; </Link>)}
                     </span>
                 </div>
             </nav>
