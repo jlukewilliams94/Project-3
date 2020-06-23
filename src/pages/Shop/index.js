@@ -1,7 +1,8 @@
-// import React from 'react';
-// import Navbar from '../../components/Navbar';
-// import { Row, Col, Card, Icon, CardTitle } from 'react-materialize';
-// import './style.css'
+import React, { useEffect, useState } from 'react';
+import Navbar from '../../components/Navbar';
+import { Row, Col, Card, Icon, CardTitle, List } from 'react-materialize';
+import './style.css'
+import API from '../../lib/API'
 
 // name: "NoDa Brewing Company",
 // logo: "",
@@ -22,52 +23,63 @@
 
 
 
-//     function Shop(props) {
-//         // Setting our component's initial state
-//         const [cards, setCards] = useState([])
-//         const [formObject, setFormObject] = useState({})
-      
-//         // Load all books and store them with setBooks
-//         useEffect(() => {
-//           loadCards()
-//         }, [])
-      
-//         // Loads all books and sets them to books
-//         function loadCards() {
-//           API.getCards()
-//             .then(res => 
-//               setCards(res.data)
-//             )
-//             .catch(err => console.log(err));
-//         };
+function Shop() {
 
-//     return (
-//         <div>
-//             <Navbar />
-//             <h1>Shop</h1>
-//             <Row>
-//                 <Col
-//                     m={6}
-//                     s={12}
-//                 >
-//                     <Card className="beercard"
-//                         actions={[
-//                             <a key="1" href="/cart">Add to cart</a>
-//                         ]}
-//                         header={<CardTitle href={props.website} image={props.logo}>{props.name}</CardTitle>}
-//                         revealIcon={<Icon>more_vert</Icon>}
-//                     >
-//                         Beer: {props.beer.name} <br></br>
-//                         Price: {props.beer.price}<br></br>
-//                         Description: {props.beer.description}<br></br>
-//                         Type: {props.beer.type} <br></br>
-//                         Alcohol Content: {props.beer.alcoholContent}<br></br>
-//                         User Reviews: {props.beer.userReviews} <br></br>
-//                     </Card>
-//                 </Col>
-//             </Row>
-//         </div>
-//     )
-// }
+    const [cards, setCards] = useState([])
+    //const [formObject, setFormObject] = useState({})
 
-// export default Shop;
+    useEffect(() => {
+        loadCards()
+    }, [])
+
+    function loadCards() {
+        API.getCards()
+            .then(res =>
+                setCards(res.data)
+            )
+            .catch(err => console.log(err));
+    };
+
+    return (
+        <div>
+            <Navbar />
+            <h1>Shop</h1>
+            <Row>
+                <Col
+                    m={6}
+                    s={12}
+                >
+                    {cards.length ? (
+                        <List>
+
+                            {cards.map(card => {
+                                return (
+            
+                                        <Card className="beercard"
+                                            actions={[
+                                                <a key={card._id} href="/cart">Add to cart</a>
+                                            ]}
+                                            header={<CardTitle href={card.website} image={card.logo}>{card.name}</CardTitle>}
+                                            revealIcon={<Icon>more_vert</Icon>}
+                                        >
+                                            Beer: {card.beer.name} <br></br>
+                                            Price: {card.beer.price}<br></br>
+                                            Description: {card.beer.description}<br></br>
+                                            Type: {card.beer.type} <br></br>
+                                            Alcohol Content: {card.beer.alcoholContent}<br></br>
+                                            User Reviews: {card.beer.userReviews} <br></br>
+                                        </Card>
+    
+                                );
+                            })}
+                        </List>
+                    ) : (
+                        <h3>No Results to Display</h3>
+                      )}
+                </Col>
+            </Row>
+        </div>
+    )
+}
+
+export default Shop;
