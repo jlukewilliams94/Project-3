@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from "../../components/Navbar";
+import Footer from '../../components/Footer'
 import { Row, Col, TextInput, Button } from 'react-materialize';
 import './style.css'
 import API from '../../lib/API'
@@ -49,6 +50,7 @@ function Admin() {
                     <Button onClick={login}>Login</Button>
                 </Row>
             </Col>
+            <Footer />
         </div >
     )
 }

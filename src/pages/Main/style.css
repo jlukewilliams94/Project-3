@@ -1,10 +1,19 @@
 .beer {
     position: fixed;
-    right: 0;
+    right: 12rem;
     bottom: 0;
-    width: 100vw;
+    width: 80vw;
     height: 90vh;
     object-fit: cover;
     z-index: -1;
-    opacity: 75%;
+    /* opacity: 75%; */
+}
+
+.drink {
+    padding-top: 9%;
+    padding-left: 3%;
+    color: rgb(4, 4, 53);
+    font-family: 'Special Elite', cursive;
+    font-size: 35px;
+    font-weight: bold;
 }
