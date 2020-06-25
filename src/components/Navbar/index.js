@@ -15,15 +15,13 @@ function Navbar() {
                     <span className="left hide-on-med-and-down menu ">
                         {(<Link to="/main" className="list"> &nbsp;&nbsp;&nbsp; home &nbsp;&nbsp;&nbsp;&nbsp;</Link>)}
                         {(<Link to="/shop" className="list">shop </Link>)}
-                        {(<Link to="/community" className="list"> &nbsp;&nbsp;&nbsp;&nbsp;community </Link>)}
                     </span>
                     <a href="/main" className="brand-logo center">
                         <img className="navlogo" src={NavLogo} alt="logo" />
                     </a>
                     <span className="right hide-on-med-and-down menu ">
                         {(<Link to="/cart" className="list"><i className="fa fa-shopping-cart"></i>&nbsp; </Link>)}
-                        {(<Link to="/admin" className="list"> &nbsp;&nbsp;&nbsp;&nbsp; admin</Link>)}
-                        {(<Link to="/contact" className="list"> &nbsp;&nbsp;&nbsp;&nbsp; contact &nbsp;&nbsp;&nbsp; </Link>)}
+                        {(<Link to="/community" className="list"> &nbsp;&nbsp;&nbsp;&nbsp;community &nbsp;&nbsp;&nbsp;</Link>)}
                     </span>
                 </div>
             </nav>

@@ -1,0 +1,15 @@
+.foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(4, 4, 53);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0%;
+    border-top: white;
+    border-style: solid;
+}
+
+.contact {
+    right: 1rem;
+}

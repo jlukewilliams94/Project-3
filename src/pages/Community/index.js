@@ -5,6 +5,7 @@ import Charlotte from './Charlotte.jpg'
 import './style.css'
 import WorkForBeer from './WorkForBeer.png'
 //import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer'
 
 function Community() {
   return (
@@ -18,6 +19,7 @@ function Community() {
           <p className="socialevents">Find social events at breweries in Charlotte!</p>
           </div>
         </div>
+        <Footer />
     </div>
   )
 }
