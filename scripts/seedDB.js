@@ -21,7 +21,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "7.2%",
                 quantity: "100",
-                userReviews = "",
+                userReviews = "8/10",
             },
             {
                 name: "Jam Session",
@@ -31,7 +31,7 @@ const brewerySeed = [
                 type: "Pale Ale",
                 alcoholContent: "5.1%",
                 quantity: "84",
-                userReviews = "",
+                userReviews = "7/10",
             },
             {
                 name: "Cavu",
@@ -41,7 +41,7 @@ const brewerySeed = [
                 type: "Blode Ale",
                 alcoholContent: "4.6%",
                 quantity: 40,
-                userReviews = "",
+                userReviews = "7/10",
             },
             {
                 name: "Coco Loco",
@@ -51,7 +51,7 @@ const brewerySeed = [
                 type: "Porter",
                 alcoholContent: "6.2%",
                 quantity: "48",
-                userReviews = "",
+                userReviews = "6/10",
             },
         ],
     },
@@ -66,7 +66,7 @@ const brewerySeed = [
                 name: "Higher-Ground",
                 picture: "https://brewerydb-images.s3.amazonaws.com/beer/5k8d4v/upload_M0ojpK-medium.png",
                 price: 8.99,
-                description: "",
+                description: "Higher Ground, our first high gravity offering, is a classic West Coast IPA style, with a hearty dose of Cascade hops to create a delicious citrusy flavor and aroma. We also include specialty crystal malts to give the beer it's unique caramel color and firm malt foundation. It's noticeable bitterness is balanced by a subtle caramel background to make for an easy drinking IPA.",
                 type: "WestCoast IPA",
                 alcoholContent: "7.1",
                 quantity: 44,
@@ -76,7 +76,7 @@ const brewerySeed = [
                 name: "Jalepeno",
                 picture: "https://untappd.akamaized.net/site/beer_logos_hd/beer-109679_e9693_hd.jpeg",
                 price: 9.99,
-                description: "",
+                description: "Our Jalapeño Pale Ale is in a class of its own. We start by brewing Free Will Pale Ale, and then add in a hefty dose of fresh-picked jalapeño peppers with the seeds removed, so you can enjoy a subtle flavor and the aroma of the green peppers without the heat.",
                 type: "Pale Ale",
                 alcoholContent: "6.8%",
                 quantity: 72,
@@ -86,7 +86,7 @@ const brewerySeed = [
                 name: "Lazy Bird",
                 picture: "https://beerconnoisseur.com/sites/default/files/styles/beer_page_245w/public/beer/lazy-bird.jpg?itok=ZnLUOlkj",
                 price: 9.99,
-                description: "",
+                description: "Lazy Bird captures the essence of what it means to be an American Brown Ale. It pours a mahogany brown with a noticeable lemony yet roasty aroma, which comes from a heavy amount of cascade hops at the end of the boil as well as a generous amount of roasted barley in the mash. This combination of malt and hop intricacy makes for an enjoyable beer year round.",
                 type: "Brown Ale",
                 alcoholContent: "7%",
                 quantity: 64,
@@ -96,7 +96,7 @@ const brewerySeed = [
                 name: "Paradise City",
                 picture: "https://products1.imgix.drizly.com/ci-birdsong-brewing-paradise-city-session-ipa-5f0fe5990a136439.png?auto=format%2Ccompress&fm=jpg&q=20",
                 price: 7.99,
-                description: "",
+                description: "Bright tropical notes and clean finish make Paradise City a perfect all year brew. A light ABV and balanced body help to create a flavorful, aromatic IPA that’s 100% drinkably dank. Grab a can and head on down to where the grass is green and the beers are chilly.",
                 type: "IPA",
                 alcoholContent: "7.6%",
                 quantity: 20,
@@ -109,13 +109,13 @@ const brewerySeed = [
         logo: "https://static1.squarespace.com/static/5671e0d2b204d5dd9d545e81/t/5681be390ab377a994811999/1586995143463/",
         location: "West End, Charlotte",
         website: "http://www.blueblazebrewing.com/",
-        description: "",
+        description: "Blue Blaze Brewing offers fresh, full-flavored beer brewed locally in small, artisan handcrafted batches using the freshest quality pesticide-free and local ingredients whenever available.",
         beers =[
             {
                 name: "Blue Blaze Altbier",
                 picture: "https://static1.squarespace.com/static/5671e0d2b204d5dd9d545e81/t/5681be390ab377a994811999/1586995143463/",
                 price: 6.99,
-                description: "",
+                description: "We have taken two very different classic German Altbier styles and crafted them into one refreshing, crisp, lighter-bodied beer that still packs in the flavor. The deep copper maltiness contrasts with the bright white head and spicy finish.",
                 type: "Pilsner",
                 alcoholContent: "4.8%",
                 quantity: 12,
@@ -125,7 +125,7 @@ const brewerySeed = [
                 name: "Yellow Blazer Kolsch",
                 picture: "https://static1.squarespace.com/static/5671e0d2b204d5dd9d545e81/t/5681be390ab377a994811999/1586995143463/",
                 price: 6.99,
-                description: "",
+                description: "This classic German golden ale is crisp and satisfying. The mild, sweet malt is perfectly balanced with a subdued spicy flavor note from German hops.",
                 type: "Blonde Ale",
                 alcoholContent: "5.2%",
                 quantity: 16,
@@ -135,7 +135,7 @@ const brewerySeed = [
                 name: "Black Blaze Milk Stout",
                 picture: "https://static1.squarespace.com/static/5671e0d2b204d5dd9d545e81/t/5681be390ab377a994811999/1586995143463/",
                 price: 5.90,
-                description: "",
+                description: "Our milk stout is a classic English mainstay. Black Blaze is a medium-bodied, creamy, dark beer. It has a slightly sweetened roastiness with hints of espresso & chocolate. This is a dark beer that you can drink all day long and all year long.",
                 type: "Stout",
                 alcoholContent: "8%",
                 quantity: 24,
@@ -145,7 +145,7 @@ const brewerySeed = [
                 name: "SoBo Orangerine Hazy IPA",
                 picture: "https://static1.squarespace.com/static/5671e0d2b204d5dd9d545e81/t/5681be390ab377a994811999/1586995143463/",
                 price: 6.99,
-                description: "",
+                description: "Heading Southbound, this New England style hazy, juicy IPA (6.4%) was brewed only with water, malt, yeast, hops, and orange peels yielding a citrusy, refreshing beer. No purees, extracts, or additives.  SoBo is a slang term for a southbound thru-hiker on the AT. ",
                 type: "IPA",
                 alcoholContent: "6%",
                 quantity: 12,
@@ -596,14 +596,14 @@ const brewerySeed = [
     },
     {
         name: "Sugar Creek Brewing",
-        logo: "",
+        logo: "https://workforyourbeer.com/custom/domain_1/image_files/sitemgr_photo_1156.jpg",
         location: "LoSO, Charlotte",
         website: "https://sugarcreekbrewing.com/",
         description: "",
         beers =[
             {
                 name: "Blood Orange",
-                picture: "",
+                picture: "https://untappd.akamaized.net/site/beer_logos_hd/beer-2793323_80dd1_hd.jpeg",
                 price: "",
                 description: "",
                 type: "IPA",
@@ -613,7 +613,7 @@ const brewerySeed = [
             },
             {
                 name: "Pale Ale",
-                picture: "",
+                picture: "https://sugarcreekbrewing.com/wp-content/uploads/2017/04/pale-ale-4-square.png",
                 price: "",
                 description: "",
                 type: "Pale Ale",
@@ -623,7 +623,7 @@ const brewerySeed = [
             },
             {
                 name: "Hazy Creek",
-                picture: "",
+                picture: "https://sugarcreekbrewing.com/wp-content/uploads/2020/03/hazy.png",
                 price: "",
                 description: "",
                 type: "IPA",
@@ -633,7 +633,7 @@ const brewerySeed = [
             },
             {
                 name: "Raspberry",
-                picture: "",
+                picture: "https://untappd.akamaized.net/photo/2020_05_08/55554c34c7c77e18896e0762dadbfd8d_c_893827389_640x640.jpg",
                 price: "",
                 description: "",
                 type: "White Ale",
@@ -645,14 +645,14 @@ const brewerySeed = [
     },
     {
         name: "Sycamore Brewing",
-        logo: "",
+        logo: "https://images.squarespace-cdn.com/content/v1/5944056d2994cabd292ec71b/1497730491164-E9FIDC9YC54DG2HUT5EW/ke17ZwdGBToddI8pDm48kMt_LvWl5LoYpdLqHrbTKEdZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7TQvSJ-dUvq06FiA6bZ_jnVAAe7AbWQG6HGLWr_6FxQq_TjCHq6scRcoCEeNESm4-Q/image-asset.png",
         location: "South End, Charlotte",
         website: "https://www.sycamorebrew.com/",
         description: "",
         beers =[
             {
                 name: "Mountain Candy",
-                picture: "",
+                picture: "https://pbs.twimg.com/media/DKVXeQBW4AEdHc7.jpg",
                 price: "",
                 description: "",
                 type: "IPA",
@@ -662,7 +662,7 @@ const brewerySeed = [
             },
             {
                 name: "Countryside",
-                picture: "",
+                picture: "https://www.charlottefive.com/wp-content/uploads/2016/02/Syamore-Brewing-Countryside-IPA.jpg",
                 price: "",
                 description: "",
                 type: "IPA",
@@ -672,7 +672,7 @@ const brewerySeed = [
             },
             {
                 name: "Southern Girl",
-                picture: "",
+                picture: "https://www.charlottefive.com/wp-content/uploads/2016/02/Sycamore-Brewing-Southern-Girl-American-Blonde-Ale.jpg",
                 price: "",
                 description: "",
                 type: "Blonde Ale",
@@ -682,7 +682,7 @@ const brewerySeed = [
             },
             {
                 name: "Rainbow Dust",
-                picture: "",
+                picture: "https://pbs.twimg.com/media/DW-b8AQWsAI3bjK.jpg",
                 price: "",
                 description: "",
                 type: "IPA",
@@ -694,14 +694,14 @@ const brewerySeed = [
     },
     {
         name: "Triple C Brewing",
-        logo: "",
+        logo: "https://images.squarespace-cdn.com/content/v1/552bc631e4b0a253ae3ab53c/1559610659709-FL1OUMSA0CHJYY0BY9DK/ke17ZwdGBToddI8pDm48kFvPKNrAM_5Ks_wP0i7UpCR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWv0N-WVKFc0IB5GsctIjSEiNQCUYtO_myC6h1OOvprR7zs2yPjc1ECvpa5Zm_kMqw/triple_c_logo_nobg.png",
         location: "South End, Charlotte",
         website: "http://www.triplecbrewing.com/",
         description: "",
         beers =[
             {
                 name: "Golden Boy",
-                picture: "",
+                picture: "https://products1.imgix.drizly.com/ci-triple-c-brewing-golden-boy-blonde-ale-986a3531ede31f93.jpeg?auto=format%2Ccompress&fm=jpg&q=20",
                 price: "",
                 description: "",
                 type: "Blonde Ale",
@@ -711,7 +711,7 @@ const brewerySeed = [
             },
             {
                 name: "Cranes in the Sky",
-                picture: "",
+                picture: "https://untappd.akamaized.net/photo/2020_06_10/74a71bbba11f92a835354b895f334010_c_904614861_640x640.jpg",
                 price: "",
                 description: "",
                 type: "Pale Ale",
@@ -721,7 +721,7 @@ const brewerySeed = [
             },
             {
                 name: "Baby Maker",
-                picture: "",
+                picture: "https://products2.imgix.drizly.com/ci-triple-c-brewing-baby-maker-double-ipa-e3c8b20f29152992.png?auto=format%2Ccompress&fm=jpg&q=20",
                 price: "",
                 description: "",
                 type: "Double IPA",
@@ -731,7 +731,7 @@ const brewerySeed = [
             },
             {
                 name: "Bier",
-                picture: "",
+                picture: "https://images.squarespace-cdn.com/content/v1/552bc631e4b0a253ae3ab53c/1568654415503-HZW7F0AJQFYO1TKD3H7S/ke17ZwdGBToddI8pDm48kIu1QHqWqYcqSXGQukjVMYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nTmq4t20SVBEeP1hbZbF3p0qWlzeoQAyZPk2qJaMlJDYnGVeje1wcxYJ6ka56sIZA/BierPilsner_Media2.png",
                 price: "",
                 description: "",
                 type: "German Style Pilsner",
@@ -743,14 +743,14 @@ const brewerySeed = [
     },
     {
         name: "Unknown Brewing",
-        logo: "",
+        logo: "https://www.porchdrinking.com/wp-content/uploads/2017/05/unknown-brewing.png",
         location: "The Gold District, Charlotte",
         website: "http://www.unknownbrewing.com/",
         description: "",
         beers =[
             {
                 name: "Feather",
-                picture: "",
+                picture: "https://lh3.googleusercontent.com/-OmY1wo1WYkM/WlD2LfuLyAI/AAAAAAAFRZI/Ltjh8cDWQpQXAATvlB59FoqDOsGweaVMgCHMYCw/image_thumb%255B1%255D?imgmax=800",
                 price: "",
                 description: "",
                 type: "Light Berliner",
@@ -760,7 +760,7 @@ const brewerySeed = [
             },
             {
                 name: "Over The Edge",
-                picture: "",
+                picture: "https://untappd.akamaized.net/site/beer_logos_hd/beer-499141_f0c2c_hd.jpeg",
                 price: "",
                 description: "",
                 type: "IPA",
@@ -770,7 +770,7 @@ const brewerySeed = [
             },
             {
                 name: "Pregame",
-                picture: "",
+                picture: "https://target.scene7.com/is/image/Target/GUEST_b8719c8c-1384-42a4-9a1d-542a047db31c?wid=488&hei=488&fmt=pjpeg",
                 price: "",
                 description: "",
                 type: "Session Ale",
@@ -780,7 +780,7 @@ const brewerySeed = [
             },
             {
                 name: "Tele Porter",
-                picture: "",
+                picture: "https://i2.wp.com/beerstreetjournal.com/wp-content/uploads/Unknown-Brewing-The-Teleporter.jpeg?fit=2048%2C1329&ssl=1",
                 price: "",
                 description: "",
                 type: "Coffee Porter",
@@ -792,14 +792,14 @@ const brewerySeed = [
     },
     {
         name: "Wooden Robot Brewing",
-        logo: "",
+        logo: "https://media.bizj.us/view/img/9098592/wooden-robot-logo-2016*750xx1035-1380-162-0.jpg",
         location: "South End, Charlotte",
         website: "https://woodenrobotbrewery.com/",
         description: "",
         beers =[
             {
                 name: "Botbier",
-                picture: "",
+                picture: "https://media.bizj.us/view/img/9098592/wooden-robot-logo-2016*750xx1035-1380-162-0.jpg",
                 price: "",
                 description: "",
                 type: "Oak-Aged Saison",
@@ -809,7 +809,7 @@ const brewerySeed = [
             },
             {
                 name: "Fluoresent Sunburn",
-                picture: "",
+                picture: "https://media.bizj.us/view/img/9098592/wooden-robot-logo-2016*750xx1035-1380-162-0.jpg",
                 price: "",
                 description: "",
                 type: "Fruited Ale",
@@ -819,7 +819,7 @@ const brewerySeed = [
             },
             {
                 name: "Overachiever",
-                picture: "",
+                picture: "https://media.bizj.us/view/img/9098592/wooden-robot-logo-2016*750xx1035-1380-162-0.jpg",
                 price: "",
                 description: "",
                 type: "Juicy IPA",
@@ -829,7 +829,7 @@ const brewerySeed = [
             },
             {
                 name: "What He's Having",
-                picture: "",
+                picture: "https://media.bizj.us/view/img/9098592/wooden-robot-logo-2016*750xx1035-1380-162-0.jpg",
                 price: "",
                 description: "",
                 type: "IPA",
