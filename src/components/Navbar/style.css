@@ -1,9 +1,8 @@
 .navbar {
     background-color: rgb(4, 4, 53);
     height: 65px;
-    /* border-bottom: solid; */
-    /* border-bottom-color: white; */
 }
+   
 
 .list {
     color: white;
