@@ -1,14 +1,40 @@
 import React from 'react';
-//import Navbar from '../../components/Navbar';
 import Flight from './flight.jpg'
 import './style.css'
-//import Footer from '../../components/Footer'
+import { Col, Row, TextInput, Textarea } from 'react-materialize';
 
 function Contact() {
     return (
         <div>
-            <div>
-                <img src={Flight} alt="flight" className="flight" />
+            <img src={Flight} alt="flight" className="flight" />
+            <div className="login">
+                <Col>
+                <Row>
+                    <h3>Send us some love!</h3>
+                </Row>
+                    <Row>
+                        <TextInput
+                            id="TextInput-7"
+                            label="Name"
+                        />
+                    </Row>
+                    <Row>
+                        <TextInput
+                            id="TextInput-6"
+                            label="Email"
+                        />
+                    </Row>
+                    <Row>
+                        <Textarea
+                            id="Textarea-12"
+                            label="Comment"
+                            l={12}
+                            m={12}
+                            s={12}
+                            xl={12}
+                        />
+                    </Row>
+                </Col>
             </div>
         </div>
     )

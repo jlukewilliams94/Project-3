@@ -7,10 +7,27 @@ h3 {
     right: 0;
     bottom: 0;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
-    opacity: 75%;
+    opacity: 50%;
 }
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field label {
+    color:rgb(4, 4, 53);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+   /* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 2px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+   }
 
 

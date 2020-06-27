@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import NavLogo from './navlogo.png';
-import { Navbar, NavItem, Icon } from 'react-materialize';
+import { Navbar, Icon } from 'react-materialize';
 import { Link } from 'react-router-dom';
 
 function Nav() {
