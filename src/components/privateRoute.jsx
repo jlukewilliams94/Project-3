@@ -1,28 +1,22 @@
-import React, { useState, useEffect } from 'react'
-import {Route, Redirect} from 'react-router-dom'
-
-const PrivateRoute =({component : Component, ...rest})=>{
-   const [isVerified, setIsVerified] = useState('')
-   useEffect(()=>{
-   const verified = localStorage.getItem('verified')
-    if(verified === "true") setIsVerified(true)
-    else setIsVerified(false)
-   },[])
-
-   return(
+import React, {useContext } from 'react'
+import { Route, Redirect } from 'react-router-dom'
+import vContext from '../context/ageContext'
+const PrivateRoute = ({ component: Component, ...rest }) => {
+    const VerifiedContext = useContext(vContext)
+    return (
         <Route {...rest}
-    
-        render ={props=>
-            isVerified === true ?(
-                <Component {...props}/>
-            ):(
-            isVerified === false ?(
-                <Redirect 
-                to={{pathname : "/"}}/>
-            ):(null))
-        }/>
 
-   )
+            render={props =>
+                VerifiedContext.verified === true ? (
+                    <Component {...props} />
+                ) : (
+                        VerifiedContext.verified === false ? (
+                            <Redirect
+                                to={{ pathname: "/" }} />
+                        ) : (null))
+            } />
+
+    )
 }
 
-export default  PrivateRoute
+export default PrivateRoute
