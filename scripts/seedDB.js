@@ -21,8 +21,8 @@ const brewerySeed = [
                 description: "2014 World Beer Cup® Gold Award Winner, American-Style IPA. Hops in your face. Crisp, mouthwatering, American citrus hops dominate for an ideal IPA character. It’s hopped before, during and after the boil with late boil additions of Citra and Amarillo for a complex flavor profile. The rich golden color comes from a blend of English and American base malts accented with substantial amounts of Vienna and Wheat malt. This is the beer that started it all for NoDa Brewing.",
                 type: "IPA",
                 alcoholContent: "7.2%",
-                quantity: "100",
-                userReviews = "8/10",
+                quantity: 100,
+                userReviews: "8/10",
             },
             {
                 name: "Jam Session",
@@ -31,8 +31,9 @@ const brewerySeed = [
                 description: "The evolution of American Pale Ale—still a session beer but it sacrifices nothing—clear hop flavor shines through without being too dominant, and there’s a great malt flavor uncommon to the variety. The backbone of this beer is the balance of imported Maris Otter and Caramunich malts with the pine and citrus flavors of Centennial, Simcoe, and Citra hops.",
                 type: "Pale Ale",
                 alcoholContent: "5.1%",
-                quantity: "84",
-                userReviews = "7/10",
+                quantity: 84,
+                userReviews: "7/10",
+ 
             },
             {
                 name: "Cavu",
@@ -42,7 +43,8 @@ const brewerySeed = [
                 type: "Blode Ale",
                 alcoholContent: "4.6%",
                 quantity: 40,
-                userReviews = "7/10",
+                userReviews: "7/10",
+
             },
             {
                 name: "Coco Loco",
@@ -51,8 +53,9 @@ const brewerySeed = [
                 description: "Deep, rich and delicious. This robust porter has a base of Chocolate and Brown malts for a stunningly deep rich color with ruby highlights. The slight bitterness from American chocolate is balanced with the sweet notes of organic coconut we toast onsite at the brewery. It was even awarded the Great American Beer Festival Silver Medal in 2012.",
                 type: "Porter",
                 alcoholContent: "6.2%",
-                quantity: "48",
-                userReviews = "6/10",
+                quantity: 48,
+                userReviews: "6/10",
+
             },
         ],
     },
@@ -72,7 +75,7 @@ const brewerySeed = [
                 type: "WestCoast IPA",
                 alcoholContent: "7.1",
                 quantity: 44,
-                userReviews = "6/10",
+                userReviews: "6/10",
             },
             {
                 name: "Jalepeno",
@@ -82,7 +85,8 @@ const brewerySeed = [
                 type: "Pale Ale",
                 alcoholContent: "6.8%",
                 quantity: 72,
-                userReviews = "5/10",
+                userReviews: "5/10",
+            
             },
             {
                 name: "Lazy Bird",
@@ -92,7 +96,8 @@ const brewerySeed = [
                 type: "Brown Ale",
                 alcoholContent: "7%",
                 quantity: 64,
-                userReviews = "8/10",
+                userReviews: "8/10",
+                
             },
             {
                 name: "Paradise City",
@@ -102,7 +107,8 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "7.6%",
                 quantity: 20,
-                userReviews = "8/10",
+                userReviews: "8/10",
+               
             },
         ],
     },
@@ -122,7 +128,8 @@ const brewerySeed = [
                 type: "Pilsner",
                 alcoholContent: "4.8%",
                 quantity: 12,
-                userReviews = "6/10",
+                userReviews: "6/10",
+                
             },
             {
                 name: "Yellow Blazer Kolsch",
@@ -132,7 +139,8 @@ const brewerySeed = [
                 type: "Blonde Ale",
                 alcoholContent: "5.2%",
                 quantity: 16,
-                userReviews = "8/10",
+                userReviews: "8/10",
+                
             },
             {
                 name: "Black Blaze Milk Stout",
@@ -142,7 +150,8 @@ const brewerySeed = [
                 type: "Stout",
                 alcoholContent: "8%",
                 quantity: 24,
-                userReviews = "5/10",
+                userReviews: "5/10",
+                
             },
             {
                 name: "SoBo Orangerine Hazy IPA",
@@ -152,7 +161,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6%",
                 quantity: 12,
-                userReviews = "6/10",
+                userReviews: "6/10",
             },
         ],
     },
@@ -172,7 +181,8 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.4%",
                 quantity: 8,
-                userReviews = "4/10",
+                userReviews: "4/10",
+
             },
             {
                 name: "Citrus Jammer",
@@ -182,7 +192,8 @@ const brewerySeed = [
                 type: "Sour",
                 alcoholContent: "6.7%",
                 quantity: 4,
-                userReviews = "8/10",
+                userReviews: "8/10",
+                
             },
             {
                 name: "Sweet Action",
@@ -192,7 +203,8 @@ const brewerySeed = [
                 type: "Blonde Ale",
                 alcoholContent: "6.9%",
                 quantity: 32,
-                userReviews = "7/10",
+                userReviews: "7/10",
+                
             },
             {
                 name: "The Crisp",
@@ -202,7 +214,8 @@ const brewerySeed = [
                 type: "Pilsner",
                 alcoholContent: "5%",
                 quantity: 28,
-                userReviews = "5/10",
+                userReviews: "5/10",
+        
             },
         ],
     },
@@ -222,7 +235,8 @@ const brewerySeed = [
                 type: "White Ale",
                 alcoholContent: "5.3%",
                 quantity: 24,
-                userReviews = "6/10",
+                userReviews: "6/10",
+              
             },
             {
                 name: "Hopness Haze",
@@ -232,7 +246,8 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6%",
                 quantity: 8,
-                userReviews = "7/10",
+                userReviews: "7/10",
+               
             },
             {
                 name: "White Zombie",
@@ -242,7 +257,8 @@ const brewerySeed = [
                 type: "White Ale",
                 alcoholContent: "5.1%",
                 quantity: 32,
-                userReviews = "6/10",
+                userReviews: "6/10",
+                
             },
             {
                 name: "Evening Joe",
@@ -252,7 +268,8 @@ const brewerySeed = [
                 type: "Coffee Blonde Ale",
                 alcoholContent: "5.7%",
                 quantity: 16,
-                userReviews = "6/10",
+                userReviews: "6/10",
+               
             },
         ],
     },
@@ -272,7 +289,8 @@ const brewerySeed = [
                 type: "Common Ale",
                 alcoholContent: "5.1%",
                 quantity: 80,
-                userReviews = "3/10",
+                userReviews: "3/10",
+             
             },
             {
                 name: "Therapy Session",
@@ -282,7 +300,8 @@ const brewerySeed = [
                 type: "Hazy IPA",
                 alcoholContent: "6.2",
                 quantity: 84,
-                userReviews = "6/10",
+                userReviews: "6/10",
+                
             },
             {
                 name: "You're Everything I Knead",
@@ -292,7 +311,8 @@ const brewerySeed = [
                 type: "Sourdough IPA",
                 alcoholContent: "5.4%",
                 quantity: 88,
-                userReviews = "6/10",
+                userReviews: "6/10",
+                
             },
             {
                 name: "Serious Business",
@@ -302,7 +322,8 @@ const brewerySeed = [
                 type: "Lager",
                 alcoholContent: "5.2",
                 quantity: 72,
-                userReviews = "8/10",
+                userReviews: "8/10",
+                
             },
         ],
     },
@@ -322,7 +343,8 @@ const brewerySeed = [
                 type: "Sour",
                 alcoholContent: "6.1%",
                 quantity: 60,
-                userReviews = "4/10",
+                userReviews: "4/10",
+               
             },
             {
                 name: "Bramblin Blackberry",
@@ -332,7 +354,8 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.9%",
                 quantity: 76,
-                userReviews = "7/10",
+                userReviews: "7/10",
+                
             },
             {
                 name: "Brunch Junkie",
@@ -342,7 +365,8 @@ const brewerySeed = [
                 type: "Stout",
                 alcoholContent: "7.5%",
                 quantity: 34,
-                userReviews = "7/10",
+                userReviews: "7/10",
+              
             },
             {
                 name: "Druid Pils",
@@ -352,7 +376,8 @@ const brewerySeed = [
                 type: "Pilsner",
                 alcoholContent: "6%",
                 quantity: 27,
-                userReviews = "7/10",
+                userReviews: "7/10",
+              
             },
         ],
     },
@@ -372,7 +397,8 @@ const brewerySeed = [
                 type: "Hazy IPA",
                 alcoholContent: "7.1%",
                 quantity: 120,
-                userReviews = "9/10",
+                userReviews: "9/10",
+               
             },
             {
                 name: "Penguin Pils",
@@ -382,7 +408,7 @@ const brewerySeed = [
                 type: "Lager",
                 alcoholContent: "6.3%",
                 quantity: 90,
-                userReviews = "4/10",
+                userReviews: "4/10",
             },
             {
                 name: "Flicker Daze",
@@ -392,7 +418,8 @@ const brewerySeed = [
                 type: "Wheat Ale",
                 alcoholContent: "5.8%",
                 quantity: 75,
-                userReviews = "7/10",
+                userReviews: "7/10",
+            
             },
             {
                 name: "Carolina Sparkle Party",
@@ -402,7 +429,8 @@ const brewerySeed = [
                 type: "Berliner Weisse Ale",
                 alcoholContent: "4%",
                 quantity: 130,
-                userReviews = {},
+                userReviews: "8/10",
+             
             },
         ],
     },
@@ -422,7 +450,8 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.4%",
                 quantity: 56,
-                userReviews = "7/10",
+                userReviews: "7/10",
+               
             },
             {
                 name: "Burn Down Brown",
@@ -432,7 +461,8 @@ const brewerySeed = [
                 type: "Brown Ale",
                 alcoholContent: "5%",
                 quantity: 36,
-                userReviews = "8/10",
+                userReviews: "8/10",
+                
             },
             {
                 name: "Tropicalus",
@@ -442,7 +472,8 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6%",
                 quantity: 66,
-                userReviews = "6/10",
+                userReviews: "6/10",
+               
             },
             {
                 name: "Booty Call",
@@ -452,7 +483,8 @@ const brewerySeed = [
                 type: "Double IPA",
                 alcoholContent: "8.7%",
                 quantity: 31,
-                userReviews = "8/10",
+                userReviews: "8/10",
+                
             },
         ],
     },
@@ -472,7 +504,8 @@ const brewerySeed = [
                 type: "Altbier",
                 alcoholContent: "5.3%",
                 quantity: 111,
-                userReviews = "5/10",
+                userReviews: "5/10",
+                
             },
             {
                 name: "Captain Jack",
@@ -482,7 +515,7 @@ const brewerySeed = [
                 type: "Pilsner",
                 alcoholContent: "4,8%",
                 quantity: 81,
-                userReviews = "5/10",
+                userReviews: "5/10",
             },
             {
                 name: "Hornets Nest",
@@ -492,7 +525,7 @@ const brewerySeed = [
                 type: "Hefeweizen",
                 alcoholContent: "5.2%",
                 quantity: 32,
-                userReviews = "8/10",
+                userReviews: "8/10",
             },
             {
                 name: "704",
@@ -502,7 +535,7 @@ const brewerySeed = [
                 type: "Hazy Wheat Ale",
                 alcoholContent: "5.3%",
                 quantity: 87,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
         ],
     },
@@ -522,7 +555,7 @@ const brewerySeed = [
                 type: "Hazy Double IPA",
                 alcoholContent: "8.2%",
                 quantity: 93,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
             {
                 name: "This Is Just A Test",
@@ -532,7 +565,7 @@ const brewerySeed = [
                 type: "Hazy IPA",
                 alcoholContent: "7.6%",
                 quantity: 12,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
             {
                 name: "Tropical Ponche",
@@ -542,7 +575,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "7.1%",
                 quantity: 4,
-                userReviews = "8/10",
+                userReviews: "8/10",
             },
             {
                 name: "Paegent Worthy",
@@ -552,7 +585,7 @@ const brewerySeed = [
                 type: "Hazy Double IPA",
                 alcoholContent: "8.3%",
                 quantity: 0,
-                userReviews = "8/10",
+                userReviews: "8/10",
             },
         ],
     },
@@ -572,7 +605,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "7.2%",
                 quantity: 24,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
             {
                 name: "Hyde In The Haze",
@@ -582,7 +615,7 @@ const brewerySeed = [
                 type: "Hazy IPA",
                 alcoholContent: "7.1%",
                 quantity: 2,
-                userReviews = "6/10",
+                userReviews: "6/10",
             },
             {
                 name: "Blue Daisy",
@@ -592,7 +625,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.4%",
                 quantity: 78,
-                userReviews = {},
+                userReviews: "7/10",
             },
             {
                 name: "Pulp Perscription",
@@ -602,7 +635,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.8%",
                 quantity: 56,
-                userReviews = {},
+                userReviews: "7/10",
             },
         ],
     },
@@ -622,7 +655,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "5.6%",
                 quantity: 100,
-                userReviews = "6/10",
+                userReviews: "6/10",
             },
             {
                 name: "Pale Ale",
@@ -632,7 +665,7 @@ const brewerySeed = [
                 type: "Pale Ale",
                 alcoholContent: "5.4%",
                 quantity: 75,
-                userReviews = "9/10",
+                userReviews: "9/10",
             },
             {
                 name: "Hazy Creek",
@@ -642,7 +675,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "5.8%",
                 quantity: 78,
-                userReviews = "8/10",
+                userReviews: "8/10",
             },
             {
                 name: "Raspberry",
@@ -652,7 +685,7 @@ const brewerySeed = [
                 type: "White Ale",
                 alcoholContent: "4.2%",
                 quantity: 98,
-                userReviews = "5/10",
+                userReviews: "5/10",
             },
         ],
     },
@@ -672,7 +705,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.2%",
                 quantity: 45,
-                userReviews = "8/10",
+                userReviews: "8/10",
             },
             {
                 name: "Countryside",
@@ -682,7 +715,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.6%",
                 quantity: 67,
-                userReviews = "5/10",
+                userReviews: "5/10",
             },
             {
                 name: "Southern Girl",
@@ -692,7 +725,7 @@ const brewerySeed = [
                 type: "Blonde Ale",
                 alcoholContent: "5.2%",
                 quantity: 87,
-                userReviews = "8/10",
+                userReviews: "8/10",
             },
             {
                 name: "Rainbow Dust",
@@ -702,7 +735,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "5.3",
                 quantity: 98,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
         ],
     },
@@ -722,7 +755,7 @@ const brewerySeed = [
                 type: "Blonde Ale",
                 alcoholContent: "7.1%",
                 quantity: 34,
-                userReviews = "5/10",
+                userReviews: "5/10",
             },
             {
                 name: "Cranes in the Sky",
@@ -732,7 +765,7 @@ const brewerySeed = [
                 type: "Pale Ale",
                 alcoholContent: "6.5%",
                 quantity: 105,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
             {
                 name: "Baby Maker",
@@ -742,7 +775,7 @@ const brewerySeed = [
                 type: "Double IPA",
                 alcoholContent: "8%",
                 quantity: 23,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
             {
                 name: "Bier",
@@ -752,7 +785,7 @@ const brewerySeed = [
                 type: "German Style Pilsner",
                 alcoholContent: "6%",
                 quantity: 65,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
         ],
     },
@@ -772,7 +805,7 @@ const brewerySeed = [
                 type: "Light Berliner",
                 alcoholContent: "4.3%",
                 quantity: 55,
-                userReviews = "6/10",
+                userReviews: "6/10",
             },
             {
                 name: "Over The Edge",
@@ -782,7 +815,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.4%",
                 quantity: 23,
-                userReviews = "9/10",
+                userReviews: "9/10",
             },
             {
                 name: "Pregame",
@@ -792,7 +825,7 @@ const brewerySeed = [
                 type: "Session Ale",
                 alcoholContent: "4.8%",
                 quantity: 6,
-                userReviews = "6/10",
+                userReviews: "6/10",
             },
             {
                 name: "Tele Porter",
@@ -802,7 +835,7 @@ const brewerySeed = [
                 type: "Coffee Porter",
                 alcoholContent: "7.2%",
                 quantity: 44,
-                userReviews = "7/10",
+                userReviews: "7/10",
             },
         ],
     },
@@ -822,7 +855,7 @@ const brewerySeed = [
                 type: "Oak-Aged Saison",
                 alcoholContent: "5.4%",
                 quantity: 65,
-                userReviews = "9/10",
+                userReviews: "9/10",
             },
             {
                 name: "Fluoresent Sunburn",
@@ -832,7 +865,7 @@ const brewerySeed = [
                 type: "Fruited Ale",
                 alcoholContent: "5%",
                 quantity: 3,
-                userReviews = "3/10",
+                userReviews: "3/10",
             },
             {
                 name: "Overachiever",
@@ -842,7 +875,7 @@ const brewerySeed = [
                 type: "Juicy IPA",
                 alcoholContent: "5.3%",
                 quantity: 98,
-                userReviews = "4/10",
+                userReviews: "4/10",
             },
             {
                 name: "What He's Having",
@@ -852,7 +885,7 @@ const brewerySeed = [
                 type: "IPA",
                 alcoholContent: "6.5%",
                 quantity: 31,
-                userReviews = "9/10",
+                userReviews: "9/10",
             },
         ],
     },
