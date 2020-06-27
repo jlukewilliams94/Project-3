@@ -1,8 +1,5 @@
 import React from 'react';
-//import { Footer } from 'react-materialize';
 import './style.css';
-// import Admin from '../../pages/Admin'
-// import Contact from '../../pages/Contact'
 import { Link } from 'react-router-dom';
 
 function Foot() {
