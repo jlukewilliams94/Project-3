@@ -7,7 +7,7 @@ const postSchema = new Schema({
         location: String,
         website: String,
         description: String,
-        beers:
+        beers: [
             {
                 name: String,
                 picture: String,
@@ -17,8 +17,8 @@ const postSchema = new Schema({
                 alcoholContent: Number,
                 quantity: Number,
                 userReviews: String,
-            },
-        
+            }
+        ]
 });
 
 const Post = mongoose.model("Post", postSchema);

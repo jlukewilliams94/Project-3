@@ -3,7 +3,7 @@ const db = require("../models");
 
 // This file empties the Posts collection and inserts the seed below
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/post");
 
 const brewerySeed = [
     {   
@@ -13,7 +13,7 @@ const brewerySeed = [
         location: "Noda, Charlotte",
         website: "http://nodabrewing.com",
         description: "Whether it’s a small-batch brew or one of our full-production, year-round beers, NoDa Brewing Company crafts “the beer on everyone’s lips” with the highest standards and an extreme attention to detail. We strive to brew an extensive variety with consistent quality so that every beer drinker’s palate gets a dependable, delicious beer.",
-        beers =[
+        beers: [
             {
                 name: "Hop Drop 'N' Roll",
                 picture: "https://nodabrewing.com/wp-content/uploads/2019/10/HopDrop2.png",
@@ -66,7 +66,7 @@ const brewerySeed = [
         location: "Uptown, Charlotte",
         website: "https://birdsongbrewing.com/",
         description: "In 2010, husband and wife, Chris and Tara Goulet were ready for a change. Chris was tired of the corporate grind and Tara needed a break from managing a local bakery. A friend and co-worker at the bakery, Conor Robinson, was learning how to home-brew. Chris and Tara felt like Charlotte was missing a small neighborhood brewery where folks could stop in for a pint or take home a growler of super-fresh, unfiltered, American-style ale. They invited a handful of close friends over to pitch a business plan and serve Conor’s beer, and Birdsong Brewing Company was born.",
-        beers =[
+        beers :[
             {
                 name: "Higher-Ground",
                 picture: "https://brewerydb-images.s3.amazonaws.com/beer/5k8d4v/upload_M0ojpK-medium.png",
@@ -119,7 +119,7 @@ const brewerySeed = [
         location: "West End, Charlotte",
         website: "http://www.blueblazebrewing.com/",
         description: "Blue Blaze Brewing offers fresh, full-flavored beer brewed locally in small, artisan handcrafted batches using the freshest quality pesticide-free and local ingredients whenever available.",
-        beers =[
+        beers :[
             {
                 name: "Blue Blaze Altbier",
                 picture: "https://static1.squarespace.com/static/5671e0d2b204d5dd9d545e81/t/5681be390ab377a994811999/1586995143463/",
@@ -172,7 +172,7 @@ const brewerySeed = [
         location: "LoSO, Charlotte",
         website: "http://brewersat4001yancey.com/",
         description: "",
-        beers =[
+        beers :[
             {
                 name: "Hootie",
                 picture: "https://pbs.twimg.com/media/DdQZ5tLU0AAMPmG.png",
@@ -226,7 +226,7 @@ const brewerySeed = [
         location: "Belmont, Charlotte",
         website: "https://catawbabrewing.com/locations/charlotte",
         description: "Catawba Brewing Company has been making unique ales and lagers in Western NC since 1999. You can find our kegs and cans in NC, SC, TN, AL, GA, and the Dominican Republic. Better still, visit one of our four North Carolina tasting rooms (Asheville Biltmore Village, Asheville South Slope, Charlotte, Morganton) for the freshest, most unique beers out there. Cheers! ",
-        beers =[
+        beers :[
             {
                 name: "El Gato Mariachi",
                 picture: "https://catawbabrewing.com/wp-content/uploads/2020/02/CVB-ElGato12ozFRONT.png",
@@ -280,7 +280,7 @@ const brewerySeed = [
         location: "Noda, Charlotte",
         website: "https://www.heistbrewery.com/",
         description: "Free Range Brewing opened in the summer of 2015, on a mission to express our creativity through the wild world of fermentation; with an excitement to contribute to our community! Our adventures in beer making are as varied and dynamic as the seasons and environment around us; from city-scape foraging to quiet farmland harvests. We prefer to let the ingredients dictate the process, whether in a brettanomyces fermented blackberry wild ale, juicy hop-bombing IPA or a sourdough-bread fermented farmhouse ale.",
-        beers =[
+        beers :[
             {
                 name: "Common Home",
                 picture: "https://workforyourbeer.com/custom/domain_1/image_files/49_photo_319.jpg",
@@ -334,7 +334,7 @@ const brewerySeed = [
         location: "Noda, Charlotte",
         website: "https://www.heistbrewery.com/",
         description: "Heist opened its doors in 2012 as Charlotte’s only Craft Brewpub. Originally brewing on a 10HL German brewhouse, we have opened a 30 barrel production facility. Over the years, our focus has changed from traditional Belgian styles to hazy IPAs, heavily fruited sours, and imperial stouts, thanks to our signature brew: CitraQuench'l. Our original location features an extensive craft cocktail menu, as well as a multi-chef inspired tapas style menu for dining. Above all, Heist is an experience. Enjoy, and cheers!",
-        beers =[
+        beers :[
             {
                 name: "Big Pick'n",
                 picture: "https://untappd.akamaized.net/site/beer_logos/beer-3148411_46058_sm.jpeg",
@@ -384,11 +384,11 @@ const brewerySeed = [
     {
         id: 8,
         name: "Legion Brewing",
-        logo: "https://static1.squarespace.com/static/5d8256d0783d5e79f8a01c54/t/5d88d38a9473093f77f85b8a/1592583220251/?format=1500w",
+        logo: "https://static1.squarespace.com/static/5d8256d0783d5e79f8a01c54/t/5d88d38a9473093f77f85b8a/1592583220251/?format:1500w",
         location: "Plaza Midwood, Charlotte",
         website: "http://legionbrewing.com/",
         description: "",
-        beers =[
+        beers :[
             {
                 name: "Juicy Jay",
                 picture: "https://images.squarespace-cdn.com/content/v1/5d8256d0783d5e79f8a01c54/1588775526033-I975KKZEUNJ1NOR9QWIG/ke17ZwdGBToddI8pDm48kCX-V5vw-8h9IBXN10-_8XN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k2HH6OEm6WCCYLibno-s8b4weTEWBRU0WHPO2pE1u2Ju0c04VQ6HZ7fTjtKQ38BuA/Cans-01.png",
@@ -441,7 +441,7 @@ const brewerySeed = [
         location: "South End, Charlotte",
         website: "http://www.discoverlennyboy.com/",
         description: "",
-        beers =[
+        beers :[
             {
                 name: "Citraphilia",
                 picture: "https://storage-trianglewine.comcash.com/images/products/a73c756b4eb911afdda6b3b9877edb4f.png",
@@ -495,7 +495,7 @@ const brewerySeed = [
         location: "LoSO, Charlotte",
         website: "http://www.oldemeckbrew.com/",
         description: "Founded in 2009 in Charlotte, NC, The Olde Mecklenburg Brewery believes in delivering fresh, local beer and adhering to Germany’s oldest beer purity guideline, known as the “Reinheitsgebot”. Five beers are available year-round and at least 8 others make seasonal and holiday appearances -- always delivered in refrigerated trucks to preserve freshness and meet the demands of ultra-premium beer consumers. OMB is Charlotte's largest & oldest brewery. The Brewery has received numerous regional and international medals in North America and Europe. OMB was also named Best Brewery Tour in the country by the readers of USA Today, and receives many accolades for its multi-acre Munich-inspired Biergarten, which seats over 1,000. For more information, visit @oldemeckbrew on social media.",
-        beers =[
+        beers :[
             {
                 name: "Copper",
                 picture: "https://www.oldemeckbrew.com/wp-content/uploads/2020/05/Beer_Indv_Copper_can.png",
@@ -546,7 +546,7 @@ const brewerySeed = [
         location: "Plaze Midwood, Charlotte",
         website: "https://residentculturebrewing.com/",
         description: "",
-        beers =[
+        beers :[
             {
                 name: "Double Universe",
                 picture: "https://untappd.akamaized.net/site/beer_logos_hd/beer-3564469_8b4a8_hd.jpeg",
@@ -596,7 +596,7 @@ const brewerySeed = [
         location: "South End, Charlotte",
         website: "https://thesuffolkpunch.com/brewery/",
         description: "Since 2017, our brewers have inspired thought and challenged expectations through a wide array of styles – including the classics, the latest trends, barrel aged special releases, and stronger seasonal beers. We are respectful of tradition, but not governed by it. We honor history, while creating modern interpretations of old favorites. Our scientific expertise and artful interpretations combine to inspire our recipes, guide our flavor profiles, delight our drinkers, and evolve our community. We’re on a delicious journey. We hope you’ll join us.",
-        beers =[
+        beers :[
             {
                 name: "Bayern Echo",
                 picture: "https://thesuffolkpunch.com/wp-content/uploads/2018/11/Primary-Logo-01.png",
@@ -646,7 +646,7 @@ const brewerySeed = [
         location: "LoSO, Charlotte",
         website: "https://sugarcreekbrewing.com/",
         description: "With Master Cicerone and participant in the award winning documentary 'Beers of Joy' Joe Vogelbacher at the wheel. Sugar Creek Brewing's philosophy combines the watchful eye of a Trappist Monk with the technical precision of a nuclear engineer to craft fresh, full-flavored beers that are immensely satisfying and intensely drinkable. Using unique combinations of aromatic yeast strains, domestic and imported hops and award-winning malt varieties, Sugar Creek infuses traditional recipes with modern tastes and techniques to create beer that nourishes both mind and body.",
-        beers =[
+        beers :[
             {
                 name: "Blood Orange",
                 picture: "https://untappd.akamaized.net/site/beer_logos_hd/beer-2793323_80dd1_hd.jpeg",
@@ -696,7 +696,7 @@ const brewerySeed = [
         location: "South End, Charlotte",
         website: "https://www.sycamorebrew.com/",
         description: "Award Winning, Easy-Drinking Craft Liquids 100% Family Owned Since the First Drop Proudly Rooted in Charlotte, North Carolina",
-        beers =[
+        beers :[
             {
                 name: "Mountain Candy",
                 picture: "https://pbs.twimg.com/media/DKVXeQBW4AEdHc7.jpg",
@@ -746,7 +746,7 @@ const brewerySeed = [
         location: "South End, Charlotte",
         website: "http://www.triplecbrewing.com/",
         description: "Triple C Brewing believes in craft, community, and commitment to the environment. From an easy drinking blonde ale to a boozy barrel-aged stout, we make sure we have something for everyone on our tap list. We’ve even won two bronze medals at the Great American Beer Festival for our 3C IPA (2015), and Zest-A-Peel (2018). Our brewery operates a 15 barrel brew system in our main brewhouse and a 7 barrel brew system in our barrel room as well as two, (15 barrel capacity) foeders. Giving back to our community and cultivating events that bring people together are also incredibly important to us. We love to celebrate and support our historic South End neighborhood. Our commitment to the environment includes donations to Catawba River clean-up, a strict recycling program at our brewery, and ensuring the spent grain (waste from the brewing process) goes to local farms which then feed their livestock with the grain.",
-        beers =[
+        beers :[
             {
                 name: "Golden Boy",
                 picture: "https://products1.imgix.drizly.com/ci-triple-c-brewing-golden-boy-blonde-ale-986a3531ede31f93.jpeg?auto=format%2Ccompress&fm=jpg&q=20",
@@ -796,7 +796,7 @@ const brewerySeed = [
         location: "The Gold District, Charlotte",
         website: "http://www.unknownbrewing.com/",
         description: "brew beer, drink beer, live beer, venture into the Unknown with us.",
-        beers =[
+        beers :[
             {
                 name: "Feather",
                 picture: "https://lh3.googleusercontent.com/-OmY1wo1WYkM/WlD2LfuLyAI/AAAAAAAFRZI/Ltjh8cDWQpQXAATvlB59FoqDOsGweaVMgCHMYCw/image_thumb%255B1%255D?imgmax=800",
@@ -846,7 +846,7 @@ const brewerySeed = [
         location: "South End, Charlotte",
         website: "https://woodenrobotbrewery.com/",
         description: "An urban farmhouse brewery bringing preservation and innovation to the Charlotte, NC beer drinking community.",
-        beers =[
+        beers: [
             {
                 name: "Botbier",
                 picture: "https://media.bizj.us/view/img/9098592/wooden-robot-logo-2016*750xx1035-1380-162-0.jpg",

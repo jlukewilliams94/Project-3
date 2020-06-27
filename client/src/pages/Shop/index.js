@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row } from 'react-materialize';
 import './style.css'
 import API from '../../lib/API'
-import BeerCard from '../../components/BeerCard/index'
+import BeerCard from '../../components/BeerCard'
 
 
 function Shop() {
@@ -27,7 +27,7 @@ function Shop() {
     //         }]
     // }];
 
-    const [cards, setCards] = useState()
+    const [cards, setCards] = useState([])
     //const [formObject, setFormObject] = useState({})
 
     useEffect(() => {
@@ -36,16 +36,20 @@ function Shop() {
 
     function loadCards() {
         API.getCards()
-            .then(res =>
+            .then(res =>{
+                console.log(res.data)
                 setCards(res.data)
+            }
             )
             .catch(err => console.log(err));
     };
-
+    // return (
+    //     <h3>No results</h3>
+    // )
     return (
         <div>
             <h1>Shop</h1>
-            {cards.length ? (
+            {(cards.length>0) ? (
                 cards.map(brewery => {
                     return (
                         <Row key={brewery.id}>
