@@ -1,11 +1,10 @@
 .beer {
-    bottom: 0;
-    width: 70%;
+    /* bottom: 0; */
+    width: 90%;
     /* z-index: -1; */
 }
 
 .beer2{
-
     display: flex;
     justify-content: center;
 }

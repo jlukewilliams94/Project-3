@@ -22,10 +22,8 @@ function Admin() {
     return (
         <div>
             <img src={Beersign} alt="beersign" className="beersign"/>
+            <div className="login">
             <Col>
-                <Row>
-                    <h3>Admin Page</h3>
-                </Row>
                 <Row>
                     <TextInput
                         email
@@ -33,6 +31,7 @@ function Admin() {
                         label="Email"
                         value={email}
                         onChange={e=>setEmail(e.target.value)}
+                        
                     //validate
                     />
                 </Row>
@@ -46,9 +45,10 @@ function Admin() {
                     value={password}
                     onChange={e=>setPassword(e.target.value)}
                     />
-                    <Button onClick={login}>Login</Button>
                 </Row>
+                    <Button onClick={login}>Login</Button>
             </Col>
+            </div>
         </div >
     )
 }
