@@ -943,8 +943,8 @@ const beerSeed = [
     }
 ];
 
-db.Post.deleteMany({})
-  .then(() => db.Post.collection.insertMany(brewerySeed))
+db.breweryPost.deleteMany({})
+  .then(() => db.breweryPost.collection.insertMany(brewerySeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
@@ -954,8 +954,8 @@ db.Post.deleteMany({})
     process.exit(1);
 });
 
-db.Post.deleteMany({})
-  .then(() => db.Post.collection.insertMany(beerSeed))
+db.beerPost.deleteMany({})
+  .then(() => db.beerPost.collection.insertMany(beerSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

@@ -13,8 +13,9 @@ import BeerMap from '../../components/Images/beerMap1.png'
 
 function Main() {
   return (
-    <div style={{
-      backgroundColor: 'lightgray', height: '100vh'}}
+    <div 
+    // style={{
+      // backgroundColor: 'lightgray', height: '100vh'}}
       >
        <p className="drink">drink local.</p>
         <div className="beer2">

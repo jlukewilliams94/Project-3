@@ -14,6 +14,9 @@ export default {
   getCards: function () {
         return axios.get("/api/post");
     },
+    getBeers: function (id) {
+        return axios.get("/api/post/" + id);
+    },
     // Gets the book with the given id
     getCard: function (id) {
         return axios.get("/api/post/" + id);
