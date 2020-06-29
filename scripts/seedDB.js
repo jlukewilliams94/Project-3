@@ -850,7 +850,7 @@ const beerSeed = [
         type: "German Style Pilsner",
         alcoholContent: "6%",
         quantity: 65,
-        userReviews: "7/10"
+        userReviews: "7/10",
         brewery_id: 15
     },
     {
