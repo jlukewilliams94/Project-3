@@ -1,26 +1,31 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const postSchema = new Schema({
+const brewerySchema = new Schema({
         name: String,
         logo: String,
         location: String,
         website: String,
         description: String,
-        beers: [
-            {
-                name: String,
-                picture: String,
-                price: Number,
-                description: String,
-                type: String,
-                alcoholContent: Number,
-                quantity: Number,
-                userReviews: String,
-            }
-        ]
+       
 });
 
-const Post = mongoose.model("Post", postSchema);
+const beerSchema = new Schema({
+    name: String,
+    picture: String,
+    price: Number,
+    description: String,
+    type: String,
+    alcoholContent: String,
+    quantity: Number,
+    userReviews: String,
+    brewery_id: Number
+})
 
-module.exports = Post;
+
+
+const breweryPost = mongoose.model("Post", brewerySchema);
+const beerPost = mongoose.model("Post", beerSchema);
+
+module.exports = breweryPost;
+module.export = beerPost;
