@@ -28,4 +28,4 @@ const breweryPost = mongoose.model("Post", brewerySchema);
 const beerPost = mongoose.model("Post", beerSchema);
 
 module.exports = breweryPost;
-module.export = beerPost;
+module.exports = beerPost;
