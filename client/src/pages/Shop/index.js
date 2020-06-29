@@ -28,7 +28,7 @@ function Shop() {
     // }];
 
     const [cards, setCards] = useState([])
-    //const [formObject, setFormObject] = useState({})
+    //const [beers, setFormObject] = useState({})
 
     useEffect(() => {
         loadCards()
@@ -37,8 +37,18 @@ function Shop() {
     function loadCards() {
         API.getCards()
             .then(res =>{
-                console.log(res.data)
-                setCards(res.data)
+                const beersArr = res.data.map(brewery => {
+                    API.getBeers(brewery.id)
+                    .then(beers => {
+                        brewery.beers = beers.data
+                        console.log(beers)
+                    })
+                    return brewery
+                    
+                })
+                //console.log(res.data)
+                console.log(beersArr)
+                setCards(beersArr)
             }
             )
             .catch(err => console.log(err));
@@ -60,8 +70,10 @@ function Shop() {
                                 
                             </Row>
                             <Row>
-                                {brewery.beers.map(beer => (
-                                    <BeerCard key={beer.id} beerInfo={beer} />
+                                {console.log(brewery),
+                                brewery.beers.map(beer => (
+
+                                    <BeerCard key={beer.brewery_id} beerInfo={beer} />
                                 ))}
                             </Row>
                         </Row>

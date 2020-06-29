@@ -1,4 +1,5 @@
 module.exports = {
-    Post: require("./post")
+    breweryPost: require("./brewerypost"),
+    beerPost: require("./beerpost")
   };
   
