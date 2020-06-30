@@ -37,18 +37,23 @@ function Shop() {
     function loadCards() {
         API.getCards()
             .then(res =>{
-                const beersArr = res.data.map(brewery => {
-                    API.getBeers(brewery.id)
+                const beersArr = res.data.map(async (brewery) => {
+                    await API.getBeers(brewery.id)
                     .then(beers => {
                         brewery.beers = beers.data
-                        console.log(beers)
                     })
-                    return brewery
+                    console.log(brewery)
+                    return brewery;
                     
                 })
                 //console.log(res.data)
+                Promise.all(beersArr).then((alldata) => {
+                    setCards(alldata);
+                })
+                /*
                 console.log(beersArr)
-                setCards(beersArr)
+                
+                */
             }
             )
             .catch(err => console.log(err));
@@ -69,12 +74,13 @@ function Shop() {
                                 {brewery.name}</h3>
                                 
                             </Row>
-                            <Row>
+                            <Row key={brewery.id + "_row"}>
                                 {console.log(brewery),
                                 brewery.beers.map(beer => (
 
-                                    <BeerCard key={beer.brewery_id} beerInfo={beer} />
-                                ))}
+                                    <BeerCard key={beer._id} beerInfo={beer} />
+                                ))
+                                }
                             </Row>
                         </Row>
                     );
