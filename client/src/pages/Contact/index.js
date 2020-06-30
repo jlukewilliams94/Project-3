@@ -1,7 +1,7 @@
 import React from 'react';
 import Flight from './flight.jpg'
 import './style.css'
-import { Col, Row, TextInput, Textarea } from 'react-materialize';
+import { Col, Row, TextInput, Textarea, Button } from 'react-materialize';
 
 function Contact() {
     return (
@@ -10,7 +10,7 @@ function Contact() {
             <div className="login">
                 <Col>
                 <Row>
-                    <h3 style={{color: "white", fontWeight: "bold"}}>Send us some love!</h3>
+                    <h3 className="contactus">Send us some love!</h3>
                 </Row>
                     <Row>
                         <TextInput
@@ -34,6 +34,7 @@ function Contact() {
                             xl={12}
                         />
                     </Row>
+                    <Button>Send</Button>
                 </Col>
             </div>
         </div>

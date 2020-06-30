@@ -15,8 +15,8 @@ import Charlotte from '../../components/Images/Charlotte.jpg'
 function Main() {
   return (
     <div>
-      <img src={Charlotte} alt="skyline" className="image" style={{height: '100%'}} />
        <p className="drink">drink local.</p>
+      <img src={Charlotte} alt="skyline" className="image" style={{height: '100%'}} />
         <div className="beer2">
           <img src={BeerMap} alt="beer" className="beer" />
         </div>
