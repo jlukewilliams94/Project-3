@@ -1,6 +1,6 @@
 .beer {
     /* bottom: 0; */
-    width: 90%;
+    width: 80%;
     /* z-index: -1; */
 }
 
@@ -14,6 +14,6 @@
     padding-left: 3%;
     color: rgb(4, 4, 53);
     font-family: 'Special Elite', cursive;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }

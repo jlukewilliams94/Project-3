@@ -10,7 +10,7 @@ function Contact() {
             <div className="login">
                 <Col>
                 <Row>
-                    <h3>Send us some love!</h3>
+                    <h3 style={{color: "white", fontWeight: "bold"}}>Send us some love!</h3>
                 </Row>
                     <Row>
                         <TextInput
@@ -27,7 +27,7 @@ function Contact() {
                     <Row>
                         <Textarea
                             id="Textarea-12"
-                            label="Comment"
+                            label="Comment or Question"
                             l={12}
                             m={12}
                             s={12}

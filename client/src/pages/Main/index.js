@@ -10,13 +10,12 @@ import './style.css'
 // import Legion from '../../components/Images/Legion.jpg';
 //import Footer from '../../components/Footer'
 import BeerMap from '../../components/Images/beerMap1.png'
+import Charlotte from '../../components/Images/Charlotte.jpg'
 
 function Main() {
   return (
-    <div 
-    // style={{
-      // backgroundColor: 'lightgray', height: '100vh'}}
-      >
+    <div>
+      <img src={Charlotte} alt="skyline" className="image" style={{height: '100%'}} />
        <p className="drink">drink local.</p>
         <div className="beer2">
           <img src={BeerMap} alt="beer" className="beer" />
