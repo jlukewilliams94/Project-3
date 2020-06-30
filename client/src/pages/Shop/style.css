@@ -15,6 +15,20 @@
     color: white;
 }
 
-h1{
+.shopping{
     margin-top: 1%;
+    padding-left: 3%;
+    color: rgb(4, 4, 53);
+    font-family: 'Special Elite', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.wait {
+    /* margin-top: 1%; */
+    padding-left: 3%;
+    color: rgb(4, 4, 53);
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    /* font-weight: bold; */
 }

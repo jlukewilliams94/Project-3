@@ -35,7 +35,7 @@ function Shop() {
     
     return (
         <div>
-            <h1>Shop</h1>
+            <h1 className="shopping">shop local.</h1>
             {(cards.length>0) ? (
                 cards.map(brewery => {
                     return (
@@ -57,7 +57,7 @@ function Shop() {
                         </Row>
                     );
                 })) : (
-                        <h3>No Results to Display</h3>
+                        <p className="wait">please wait while we fetch your beer...</p>
                 )}
         </div >
     )

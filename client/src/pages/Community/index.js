@@ -10,13 +10,12 @@ import WorkForBeer from './WorkForBeer.png'
 function Community() {
   return (
     <div>
-        <div>
+          <h3 className="community">connect with neighbors.</h3>
           <img src={Map} alt="skyline" className="image" />
           <div>
           <a  href="https://workforyourbeer.com/" target="blank"><img src={WorkForBeer} alt="workforbeer" className="workforbeer"/></a>
-          <p className="socialevents">Find social events at breweries in Charlotte!</p>
+          <p className="workout">workout first, beer second</p>
           </div>
-        </div>
     </div>
   )
 }

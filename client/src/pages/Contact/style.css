@@ -6,5 +6,12 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    opacity: 75%;
+    opacity: 60%;
+}
+
+.contactus {
+    font-family: 'Special Elite', cursive;
+    font-size: 40px;
+    font-weight: bold;
+
 }

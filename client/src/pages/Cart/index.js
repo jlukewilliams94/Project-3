@@ -1,11 +1,10 @@
 import React from 'react';
-// import Navbar from '../../components/Navbar';
-// import Footer from '../../components/Footer'
+import './style.css'
 
 function Cart() {
     return(
         <div>
-            <h3>Shopping Cart</h3>
+            <h3 className="cart">great choice.</h3>
         </div>
     )
 }
