@@ -24,7 +24,7 @@ function Age() {
             {redirect? <Redirect to="/main"/>:null}
             <video width='100vw' autoPlay muted loop id="myVideo"
                 src={Beer} type="video/mp4" />
-            <img className=" center-align valign-wrapper logo" src={Logo} alt="logo" />
+            <img className="logo center-align valign-wrapper" src={Logo} alt="logo"/>
             <span className="card-title caption content center-align">Are you 21 or older?
                 <div>
                     <Button className="btn waves-effect-yellow btn-small" onClick={Yes}>Yes</Button>
@@ -32,9 +32,6 @@ function Age() {
                 </div>
             </span>
         </div>
-
-
-
     );
 }
 

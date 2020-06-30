@@ -6,29 +6,8 @@ import BeerCard from '../../components/BeerCard'
 
 
 function Shop() {
-    // const brewerySeed = [{
-    //     name: "NoDa Brewing Company",
-    //     logo: "https://d2sochvv0rudri.cloudfront.net/place_photos/4526/noda-brewing-company.png",
-    //     location: "Noda, Charlotte",
-    //     website: "http://nodabrewing.com",
-    //     description: "Whether it’s a small-batch brew or one of our full-production, year-round beers, NoDa Brewing Company crafts “the beer on everyone’s lips” with the highest standards and an extreme attention to detail. We strive to brew an extensive variety with consistent quality so that every beer drinker’s palate gets a dependable, delicious beer.",
-    //     id:1,
-    //     beers: [
-    //         {
-    //             name: "Hop Drop 'N' Roll",
-    //             picture: "https://nodabrewing.com/wp-content/uploads/2019/10/HopDrop2.png",
-    //             price: 14.99,
-    //             description: "2014 World Beer Cup® Gold Award Winner, American-Style IPA. Hops in your face. Crisp, mouthwatering, American citrus hops dominate for an ideal IPA character.",
-    //             type: "IPA",
-    //             alcoholContent: "7.2%",
-    //             quantity: "100",
-    //             id: 10010
-
-    //         }]
-    // }];
 
     const [cards, setCards] = useState([])
-    //const [beers, setFormObject] = useState({})
 
     useEffect(() => {
         loadCards()
@@ -46,21 +25,14 @@ function Shop() {
                     return brewery;
                     
                 })
-                //console.log(res.data)
                 Promise.all(beersArr).then((alldata) => {
                     setCards(alldata);
                 })
-                /*
-                console.log(beersArr)
-                
-                */
             }
             )
             .catch(err => console.log(err));
     };
-    // return (
-    //     <h3>No results</h3>
-    // )
+    
     return (
         <div>
             <h1>Shop</h1>
