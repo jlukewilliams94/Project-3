@@ -47,8 +47,7 @@ function Shop() {
                                 
                             </Row>
                             <Row key={brewery.id + "_row"}>
-                                {console.log(brewery),
-                                brewery.beers.map(beer => (
+                                {brewery.beers.map(beer => (
 
                                     <BeerCard key={beer._id} beerInfo={beer} />
                                 ))
