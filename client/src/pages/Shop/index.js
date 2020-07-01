@@ -42,7 +42,7 @@ function Shop() {
                         <Row key={brewery.id}>
                             <Row className='nameRow'
                             >
-                                <h3 className="icon"><img src={brewery.logo} alt={brewery.name}/>
+                                <h3 className="icon"><img src={brewery.logo} alt={brewery.name}/> &nbsp;
                                 {brewery.name}</h3>
                                 
                             </Row>
