@@ -21,7 +21,7 @@ function Admin() {
     if(redirect)return(<Redirect to='/cart' />)
     return (
         <div>
-            <h3 className="hello">Hello there, Rad Friend!</h3>
+            <h3 className="hello">Hello there, Rad Employee!</h3>
             <img src={Beersign} alt="beersign" className="beersign"/>
             <div className="login">
             <Col>

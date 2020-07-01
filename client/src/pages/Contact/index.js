@@ -10,7 +10,7 @@ function Contact() {
             <div className="login">
                 <Col>
                 <Row>
-                    <h3 className="contactus">Send us some love!</h3>
+                    <h1 className="contactus">Send us some love!</h1>
                 </Row>
                     <Row>
                         <TextInput

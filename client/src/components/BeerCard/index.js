@@ -19,12 +19,14 @@ const BeerCard = props => {
                 <b>Description:</b> {props.beerInfo.description}<br/>
                 <b>Type:</b> {props.beerInfo.type} <br/>
                 <b>Alcohol Content:</b> {props.beerInfo.alcoholContent}<br/> 
-                <Button>Add to Cart</Button><span onClick={()=>setQuantity(curr=>curr + 1)}>+</span>{quantity}<span onClick={()=>setQuantity(curr=>{
+                <b>User Reviews:</b> {props.beerInfo.userReviews}<br/>
+                <Button>Add to Cart</Button>
+                {/* <span onClick={()=>setQuantity(curr=>curr + 1)}>+</span>{quantity}<span onClick={()=>setQuantity(curr=>{
                     if(curr) {
                         return curr-1
                     }
                     return 0
-                })}>-</span>
+                })}>-</span> */}
             </Card>
         </Col>
     )
