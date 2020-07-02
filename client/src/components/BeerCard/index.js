@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
 import { Col, Card, CardTitle, Button } from 'react-materialize';
 import './beerCard.css'
+
 const BeerCard = props => {
+    const Add =()=>{
+        localStorage.setItem('item', props.beerInfo.name);
+        localStorage.setItem('picture', props.beerInfo.picture);
+        localStorage.setItem('price', props.beerInfo.price)
+    }
+
     const [quantity, setQuantity] = useState(0)
     return (
         <Col
@@ -20,7 +27,7 @@ const BeerCard = props => {
                 <b>Type:</b> {props.beerInfo.type} <br/>
                 <b>Alcohol Content:</b> {props.beerInfo.alcoholContent}<br/> 
                 <b>User Reviews:</b> {props.beerInfo.userReviews}<br/>
-                <Button>Add to Cart</Button>
+                <Button onClick={Add}>Add to Cart</Button>
                 {/* <span onClick={()=>setQuantity(curr=>curr + 1)}>+</span>{quantity}<span onClick={()=>setQuantity(curr=>{
                     if(curr) {
                         return curr-1
