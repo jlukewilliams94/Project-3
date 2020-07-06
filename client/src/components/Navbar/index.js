@@ -10,7 +10,8 @@ function Nav() {
         <div>
             <Navbar className="navbar"
                 alignLinks="left"
-                brand={<a className="brand-logo" href="main"><img src={NavLogo} alt="logo"></img></a>}
+                brand={<b  ><img src={NavLogo} alt="logo"></img></b>}
+                // className="brand-logo"
                 centerLogo
                 id="mobile-nav"
                 menuIcon={<Icon>menu</Icon>}
@@ -26,18 +27,6 @@ function Nav() {
                     preventScrolling: true
                 }}
             >
-                {/* <NavItem>
-            {(<Link to="/main" className="list">home</Link>)}
-            </NavItem>
-            <NavItem>
-            {(<Link to="/shop" className="list">shop </Link>)}
-            </NavItem>    
-            <NavItem>
-            {(<Link to="/community" className="list">community</Link>)}
-            </NavItem>
-            <NavItem>
-            {(<Link to="/cart" className="list"><i className="fa fa-shopping-cart"></i></Link>)}
-            </NavItem> */}
                 <ul>
                     <li>{(<Link to="/main" className="list">home</Link>)}</li>
                     <li>{(<Link to="/shop" className="list">shop </Link>)}</li>
