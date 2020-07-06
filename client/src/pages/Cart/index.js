@@ -1,48 +1,50 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './style.css'
 import CartCard from '../../components/CartCard'
 import { Card, Col, Row, Button } from 'react-materialize';
-import Checkout from '../Checkout'
 import { Link } from 'react-router-dom'
+import totalContext from '../../context/ageContext'
 
-
-function Cart() {
-
+const Cart = props=> {
+    const totalControl = useContext(totalContext)
     const [items, setItems] = useState([])
     const [total, setTotal] = useState(0)
 
     useEffect(() => {
+        if(!total){
         const itemList = JSON.parse(localStorage.getItem('cart'))
         setItems(itemList)
-    }, [])
+        }
+        totalControl.changeTotal(total)
+    }, [total])
 
     const sum = (price) => {
-        setTotal(currTotal => currTotal + price)
+        setTotal(curr=> curr + price )
+        
     }
-
+    
     return (
+        
         <div>
 
-            {(items.length > 0) ? (
-                items.map(item => {
-                    return (
-                        <div>
-                            <Row>
-                                <h3 className="cart">great choice.</h3>
-                            </Row>
+            {items ? (
+                <>
+                    <Row>
+                        <h3 className="cart">great choice.</h3>
+                    </Row>
+                    <Row>
+                    {items.map(item => {
+                        return (
+                           
 
-                            <Row>
-                                <CartCard key={item}
-                                    beerInfo={item}
-                                    math={sum}
-                                />
-                            </Row>
-                        </div>
-                    )
-                })
-            ) : (
-                    <h2 className="tagline">cart is empty <i className="fa fa-frown-o fa-2x" aria-hidden="true"></i></h2>
-                )}
+                                    <CartCard key={item.id}
+                                        beerInfo={item}
+                                        math={sum}
+                                    />
+                           
+                        )
+                    })}
+                    </Row>
             <Row>
                 <Col>
                     <Card>
@@ -50,11 +52,14 @@ function Cart() {
                             <b>Total:</b> {total.toFixed(2)}<br />
                         </div>
                         <Button>{(<Link to="/checkout" className="checkoutBtn">Checkout</Link>)}</Button>
-                </Card>
-            </Col>
+                    </Card>
+                </Col>
+            </Row>
+                </>
+            ) : (
+                    <h2 className="tagline">cart is empty <i className="fa fa-frown-o fa-2x" aria-hidden="true"></i></h2>
+                )}
 
-        </Row>
-   
         </div >
     )
 }
