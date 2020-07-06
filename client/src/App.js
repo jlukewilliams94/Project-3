@@ -8,6 +8,7 @@ import Shop from './pages/Shop';
 import Cart from './pages/Cart'
 import Community from './pages/Community';
 import Contact from './pages/Contact';
+import Checkout from './pages/Checkout'
 import 'materialize-css';
 import Nav from './components/Navbar'
 import Footer from './components/Footer'
@@ -40,6 +41,7 @@ function App() {
             <VerifiedRoute exact path="/cart" component={Cart} />
             <VerifiedRoute exact path="/community" component={Community} />
             <VerifiedRoute exact path="/contact" component={Contact} />
+            <VerifiedRoute exact path="/checkout" component={Checkout} />
           </Switch>
         </div>
         {verified.verified && <Footer />}

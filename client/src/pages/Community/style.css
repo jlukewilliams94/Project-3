@@ -10,26 +10,22 @@
 }
 
 .workforbeer {
-    /* padding-left: 8rem; */
     padding-top: 5rem;
     height: 15rem;
 }
 
 .run {
-    /* padding-left: 17rem; */
     padding-top: 5rem;
     height: 15rem;
 }
 
 .trivia {
-    /* padding-left: 17rem; */
     padding-top: 5rem;
     height: 15rem;
 }
 
 
 .socialevents {
-    /* padding-left: 3%; */
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -45,15 +41,9 @@
 }
 
 .tagline {
-    padding-left: 9rem;
+    /* padding-left: 9rem; */
     color: rgb(4, 4, 53);
     font-family: 'Special Elite', cursive;
     font-size: 25px;
     /* font-weight: bold;  */
 }
-
-/* .colContent {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-} */
