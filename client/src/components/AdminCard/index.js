@@ -23,13 +23,13 @@ const AdminCard = props => {
 
     return (
         <Col
-            xl={2}
-            l={3}
-            m={4}
+            xl={3}
+            l={4}
+            m={6}
             s={12}
 
         >
-            <Card className="beercard"
+            <Card className="adminCard"
                 header={<CardTitle image={props.beerInfo.picture}></CardTitle>}
                 title={props.beerInfo.name}>
                 <div className="row">
