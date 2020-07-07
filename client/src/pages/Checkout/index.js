@@ -5,13 +5,12 @@ import { PayPalButton } from "react-paypal-button-v2"
 
 import totalContext from '../../context/ageContext'
 
-const Checkout =props=> {
+const Checkout = props => {
     const totalControl = useContext(totalContext)
-    const [total, setTotal]= useState(0) 
-    useEffect(()=>{
+    const [total, setTotal] = useState(0)
+    useEffect(() => {
         setTotal(totalControl.total)
-        console.log(totalControl.total)
-    },[])
+    }, [])
 
 
     return (
@@ -51,7 +50,7 @@ const Checkout =props=> {
                     />
                 </Row>
                 <b style={{ fontSize: '20px' }}>Total: {total} </b> <br />
-                
+
                 <PayPalButton
                     amount={total}
                     // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
