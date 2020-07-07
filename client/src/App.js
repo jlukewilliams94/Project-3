@@ -4,6 +4,7 @@ import './App.css';
 import Age from './pages/Age';
 import Main from './pages/Main';
 import Admin from './pages/Admin';
+import AdminSite from './pages/AdminSite'
 import Shop from './pages/Shop';
 import Cart from './pages/Cart'
 import Community from './pages/Community';
@@ -42,6 +43,7 @@ function App() {
             <Route exact path="/" component={Age} />
             <VerifiedRoute path='/main' component={Main} />
             <VerifiedRoute exact path="/admin" component={Admin} />
+            <VerifiedRoute exact path="/adminSite" component={AdminSite} />
             <VerifiedRoute exact path="/shop" component={Shop} />
             <VerifiedRoute exact path="/cart" component={Cart} changeTotal={setTotal} />
             <VerifiedRoute exact path="/community" component={Community} />

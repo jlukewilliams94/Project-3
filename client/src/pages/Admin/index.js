@@ -18,7 +18,7 @@ function Admin() {
             setRedirect(true)
         }
     }
-    if(redirect)return(<Redirect to='/cart' />)
+    if(redirect)return(<Redirect to='/adminSite' />)
     return (
         <div>
             <h3 className="hello">Hello there, Rad Employee!</h3>

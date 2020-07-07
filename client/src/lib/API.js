@@ -28,5 +28,9 @@ export default {
     // Saves a book to the database
     saveCard: function (cardData) {
         return axios.post("/api/post", cardData);
+    },
+    updateBeer: function (beerData) {
+        return axios.post("/api/post", beerData);
     }
+
 };
