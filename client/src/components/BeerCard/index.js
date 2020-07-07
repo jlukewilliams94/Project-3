@@ -1,17 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Col, Card, CardTitle, Button } from 'react-materialize';
 import './beerCard.css'
-import Cart from '../CartCard';
-
 
 const BeerCard = props => {
-    //var items = [];
-    //const item_id = props.beerInfo.name
 
     function Add() {
-        // items.push(item_id);
-
-        // localStorage.setItem("item", JSON.stringify(items));
         let currentCart = JSON.parse(localStorage.getItem('cart'))
         if (!currentCart) {
             currentCart =[]
@@ -23,7 +16,8 @@ const BeerCard = props => {
             id: props.beerInfo._id
         }
         currentCart.push(selectedBeer)
-         localStorage.setItem('cart', JSON.stringify(currentCart))
+        localStorage.setItem('cart', JSON.stringify(currentCart))
+
     }
 
     return (
@@ -34,7 +28,7 @@ const BeerCard = props => {
             s={12}
 
         >
-            <Card className="beercard"
+            <Card className="beercard" key={props.beerInfo.id}
                 header={<CardTitle image={props.beerInfo.picture}></CardTitle>}
                 title={props.beerInfo.name}
             >

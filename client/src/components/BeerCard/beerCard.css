@@ -1,4 +1,13 @@
 .card-image > img{
-    max-width: 30%;
+    max-width: 20%;
     margin: auto auto;
 }
+
+.beercard {
+    height: 650px;
+}
+
+/* header {
+  padding-left: 2%;  
+} */
+

@@ -24,7 +24,6 @@ function App() {
     },
     total:total,
     changeTotal: function (newtotal){
-      console.log('test',newtotal)
       setVerified(curr=>{return{...curr, total:newtotal}})
     }
   });
