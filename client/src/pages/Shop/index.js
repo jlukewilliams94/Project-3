@@ -21,7 +21,6 @@ function Shop() {
                     .then(beers => {
                         brewery.beers = beers.data
                     })
-                    console.log(brewery)
                     return brewery;
                     
                 })
