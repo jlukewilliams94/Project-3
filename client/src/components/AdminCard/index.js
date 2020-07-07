@@ -4,14 +4,21 @@ import './beerCard.css';
 import API from '../../lib/API';
 
 const AdminCard = props => {
-    const [quantity, setQuantity] = useState(0)
+    const [beer, setBeer] = useState({id: props.beerInfo._id, price: props.beerInfo.price, quantity: props.beerInfo.quantity});
+
+    let handlePriceChange = e => {
+        setBeer({...beer, price: parseFloat(e.target.value)});
+     };
+     let handleQuantityChange = e => {
+        setBeer({...beer, quantity: parseInt(e.target.value)});
+     };
 
     const handleSubmit = event => {
         event.preventDefault();
-        console.log();
-
-        API.updateBeer()
-            .then();
+        console.log(beer);
+        
+        API.updateBeer(beer)
+            .then(console.log("Done!"));
       };
 
     return (
@@ -25,25 +32,31 @@ const AdminCard = props => {
             <Card className="beercard"
                 header={<CardTitle image={props.beerInfo.picture}></CardTitle>}
                 title={props.beerInfo.name}>
-                {/* <b>Price:</b> {props.beerInfo.price}<br />
-                <b>Description:</b> {props.beerInfo.description}<br />
-                <b>Type:</b> {props.beerInfo.type} <br />
-                <b>Alcohol Content:</b> {props.beerInfo.alcoholContent}<br /> */}
                 <div className="row">
                     <form className="col s12" onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="input-field col s12">
-                                <input placeholder={props.beerInfo.quantity} id="quantity" name="quantity" type="text" className="validate" />
+                                <input defaultValue={props.beerInfo.quantity} 
+                                    id="quantity" 
+                                    name="quantity" 
+                                    type="text" 
+                                    className="validate" 
+                                    onChange={(e) => {handleQuantityChange(e)}}/>
                                 <label className="active" for="quantity">In Stock</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="input-field col s12">
-                                <input placeholder={props.beerInfo.price} id="price" name="price" type="text" className="validate" />
+                                <input defaultValue={props.beerInfo.price} 
+                                id="price" 
+                                name="price" 
+                                type="text" 
+                                className="validate"
+                                onChange={(e) => {handlePriceChange(e)}}/>
                                 <label className="active" for="price">Price</label>
                             </div>
                         </div>
-                        <input type="submit" class="waves-effect waves-light btn" />
+                        <input type="submit" className="waves-effect waves-light btn" />
                     </form>
                 </div>
             </Card>
