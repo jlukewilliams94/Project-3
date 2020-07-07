@@ -1,0 +1,8 @@
+.card-image > img{
+    max-width: 40%;
+    margin: auto auto;
+}
+
+.adminCard {
+    height: 500px;
+}
