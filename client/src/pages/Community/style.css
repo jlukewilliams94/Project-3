@@ -6,7 +6,7 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    opacity: 40%;
+    opacity: 40% !important;
 }
 
 .workforbeer {
