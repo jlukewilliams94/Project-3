@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import './main.css'
 import BeerMap from '../../components/Images/beerMap1.png'
 import Charlotte from '../../components/Images/Charlotte.jpg'
 
